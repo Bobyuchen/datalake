@@ -18,6 +18,44 @@ docker-compose up --build -d
 
 This command navigates to the Docker directory within your project and initiates the Docker Compose process, which builds and starts the containers defined in your `docker-compose.yml` file in detached mode.
 
+## Containers
+
+主要的幾個containers
+1. **trino**: 可以開localhost UI，沒有權限問題。
+   ```
+   docker exec -it trino trino
+   ```
+   就可以執行sql語法 ex:
+   ```
+   show catalogs;
+   show schemas from datalake;
+   select * from datalake.
+   show tables from datalake.analytics_stage;
+   select * from datalake.analytics_stage.stg_streams_hourly;
+   ```
+2. **mongo**: UI要另外下載MongoDB Compass。
+3. **oltp**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=postgres
+   ```
+   docker exec -it oltp psql -U postgres -d postgres
+   ```
+
+4. **metastore_db**: postgresql。POSTGRES_DB=metastore。POSTGRES_USER=hive。POSTGRES_PASSWORD=hive
+   ```
+   docker exec -it metastore_db psql -U hive -d metastore
+   ```
+
+5. **minio**:可以開localhost UI，帳號minio，密碼minio123。
+6. **broker & schema-registry**: 兩個是Kafka server有時候可能會關掉，要再開一次。
+
+## Trino catalog
+
+會有5個catalog，可以由tirno連線。會存在trino Files中
+1. **datalake**:指向minio經由iceberg表格式管理。
+2. **hive**:指向minio經由hive表格式管理。
+3. **metastore_db**:指向metastore_db。為postgresql資料庫。儲存metadata
+4. **oltp**:指向oltp。為postgresql的資料庫，儲存資料。
+5. **website**:mongodb。為mongodb資料庫，儲存資料。
+
 
 ## Integration with Kafka for Data Streaming
 
