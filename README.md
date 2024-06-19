@@ -119,12 +119,15 @@ With the Trino server running, the next step is to execute the necessary Dbt com
 ```
 dbt deps
 dbt debug
+dbt run --models source
+dbt run --models stage
+dbt run --models mart
 dbt run
 ```
 
 `dbt deps` fetches the project's dependencies, ensuring that all required packages and modules are available.
 `dbt debug` will All checks passed.
-`dbt run` then executes the transformations defined in your dbt project, building your data models according to the specifications in your dbt files. Will PASS=13 WARN=0 ERROR=1 SKIP=1 TOTAL=15.
+`dbt run` then executes the transformations defined in your dbt project, building your data models according to the specifications in your dbt files.PASS=15 WARN=0 ERROR=0 SKIP=0 TOTAL=15.
 
 ## Get Superset
 

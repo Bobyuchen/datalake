@@ -11,7 +11,8 @@ WITH combined_activities AS (
   WHERE country IS NOT NULL
   UNION ALL
   SELECT
-    'Unknown' AS country, 
+    'Unknown' AS country,
+    'auth_event' AS event_type, 
     ts,
     userid
   FROM {{ ref('src_auth_events') }}
