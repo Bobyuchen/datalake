@@ -31,13 +31,14 @@ This command navigates to the Docker directory within your project and initiates
    show schemas from datalake;
    show tables from datalake.analytics_stage;
    select * from datalake.analytics_stage.stg_streams_hourly;
-   SELECT COUNT(*) AS row_count FROM datalake.analytics_source.src_page_view_events;
+   SELECT COUNT(*) AS row_count FROM oltp.public.auth_events; #確認postgresql source資料來源有無更新。
+   SELECT COUNT(*) AS row_count FROM datalake.analytics_source.src_page_view_events; #後續可以確認數據在datalake有無更新
    ```
 2. **mongo**: UI要另外下載MongoDB Compass。
 3. **oltp**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=postgres
    ```
    docker exec -it oltp psql -U postgres -d postgres
-   SELECT COUNT(*) FROM auth_events;   #在後續可以進postgresql查看數據流的量。
+   SELECT COUNT(*) FROM auth_events;                    #可以進postgresql查看source量。
    ```
 
 4. **metastore_db**: postgresql。POSTGRES_DB=metastore。POSTGRES_USER=hive。POSTGRES_PASSWORD=hive
@@ -162,6 +163,12 @@ dbt run
 `dbt deps` fetches the project's dependencies, ensuring that all required packages and modules are available.
 `dbt debug` will All checks passed.
 `dbt run` then executes the transformations defined in your dbt project, building your data models according to the specifications in your dbt files.PASS=15 WARN=0 ERROR=0 SKIP=0 TOTAL=15.
+
+dbt對iceberg materialized格式
+
+1. **table**: dbt table的邏輯是沒有table就創建一個新的，有舊的table存在會刪掉舊的，建一個新的。所以對iceberg而言，不會有版本紀錄，舊的跟新的本質是兩個不同的。
+
+2. **incremental**:dbt incremental的邏輯是只處理有變動的部分，不會更新整個表，當有資料新增，就對舊的表去新增資料，所以會有iceberg的版本紀錄。
 
 ## Get Superset
 
