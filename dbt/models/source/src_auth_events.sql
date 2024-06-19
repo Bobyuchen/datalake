@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='incremental', unique_key='_id') }}
 
 with source as (
     select
@@ -46,6 +46,7 @@ select
     END AS success_boolean
 from source
 
+
 {% if is_incremental() %}
-    where ts > (select max(ts) from {{ this }})
+    where ts NOT IN (SELECT ts FROM {{ this }})
 {% endif %}

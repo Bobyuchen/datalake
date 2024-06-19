@@ -31,11 +31,13 @@ This command navigates to the Docker directory within your project and initiates
    show schemas from datalake;
    show tables from datalake.analytics_stage;
    select * from datalake.analytics_stage.stg_streams_hourly;
+   SELECT COUNT(*) AS row_count FROM datalake.analytics_source.src_page_view_events;
    ```
 2. **mongo**: UI要另外下載MongoDB Compass。
 3. **oltp**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=postgres
    ```
    docker exec -it oltp psql -U postgres -d postgres
+   SELECT COUNT(*) FROM auth_events;   #在後續可以進postgresql查看數據流的量。
    ```
 
 4. **metastore_db**: postgresql。POSTGRES_DB=metastore。POSTGRES_USER=hive。POSTGRES_PASSWORD=hive
@@ -62,7 +64,7 @@ To simulate real-time data streaming in a music event context, follow the instru
 
 ### Preparing Kafka Connectors
 
-After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:(設定Kafka連線權限)
+After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:(設定Kafka連線權限，確認broker & schema-registry兩個container都有開啟)
    
 1. **Set Permissions for `install_connectors.sh`**: This script installs the necessary Kafka connectors for integrating with PostgreSQL and MongoDB. Adjust the file permissions to make it executable.
    ```
@@ -126,10 +128,10 @@ python main.py
 起虛擬環境抓dbt-trino件
 ```
 cd dbt
-python -m venv dbt-env  
+python -m venv dbt-venv  
 
-source dbt-env/bin/activate         # activate the environment for Mac and Linux OR
-dbt-env\Scripts\activate            # activate the environment for Windows
+source dbt-venv/bin/activate         # activate the environment for Mac and Linux OR
+dbt-venv\Scripts\activate            # activate the environment for Windows
 
 python -m pip install dbt-trino
 ```

@@ -29,4 +29,4 @@ with source as (
 select * from source
 
 
-    where ts > (select max(ts) from "datalake"."analytics_source"."src_page_view_events")
+    where id NOT IN (SELECT id FROM "datalake"."analytics_source"."src_page_view_events")

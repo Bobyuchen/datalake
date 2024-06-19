@@ -32,8 +32,5 @@ with source as (
 select * from source
 
 {% if is_incremental() %}
-
-    -- this filter will only be applied on an incremental run
-    where ts > (select max(ts) from {{ this }})
-
+    where id NOT IN (SELECT id FROM {{ this }})
 {% endif %}

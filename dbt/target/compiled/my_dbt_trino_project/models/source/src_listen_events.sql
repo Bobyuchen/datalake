@@ -32,7 +32,4 @@ with source as (
 select * from source
 
 
-
-    -- this filter will only be applied on an incremental run
-    where ts > (select max(ts) from "datalake"."analytics_source"."src_listen_events")
-
+    where id NOT IN (SELECT id FROM "datalake"."analytics_source"."src_listen_events")
