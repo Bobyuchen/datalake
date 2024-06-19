@@ -51,7 +51,7 @@ This command navigates to the Docker directory within your project and initiates
 
 ## Trino catalog
 
-會有5個catalog，可以由tirno連線。會存在trino container Files中的etc/trino/catalog
+有5個catalog，可以由tirno連線。會存在trino container Files中的etc/trino/catalog
 1. **datalake**:指向minio經由iceberg表格式管理。
 2. **hive**:指向minio經由hive表格式管理。
 3. **metastore_db**:指向metastore_db。為postgresql資料庫。儲存metadata。
@@ -61,7 +61,7 @@ This command navigates to the Docker directory within your project and initiates
 
 ## Integration with Kafka for Data Streaming
 
-To simulate real-time data streaming in a music event context, follow the instructions from the GitHub repository [Stefen-Taime/eventmusic](https://github.com/Stefen-Taime/eventmusic.git). This repository contains scripts and configurations necessary for producing messages to Kafka, which acts as the backbone for real-time data handling in this stack.(可以略過這段使用以下方法創建資料)
+To simulate real-time data streaming in a music event context.
 
 ### Preparing Kafka Connectors
 
