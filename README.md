@@ -27,10 +27,10 @@ This command navigates to the Docker directory within your project and initiates
    ```
    就可以執行sql語法 ex:
    ```
-   show catalogs;
-   show schemas from datalake;
-   show tables from datalake.analytics_stage;
-   select * from datalake.analytics_stage.stg_streams_hourly;
+   SHOW catalogs;
+   SHOW schemas FROM datalake;
+   SHOW tables FROM datalake.analytics_stage;
+   SELECT * FROM datalake.analytics_stage.stg_streams_hourly;
    SELECT COUNT(*) AS row_count FROM oltp.public.auth_events; #確認postgresql source資料來源有無更新。
    SELECT COUNT(*) AS row_count FROM datalake.analytics_source.src_page_view_events; #後續可以確認數據在datalake有無更新
    ```
