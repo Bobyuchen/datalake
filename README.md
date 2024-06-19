@@ -20,7 +20,7 @@ This command navigates to the Docker directory within your project and initiates
 
 ## Containers
 
-主要的幾個containers
+主要的containers
 1. **trino**: 可以開localhost UI，沒有權限問題。
    ```
    docker exec -it trino trino
@@ -29,7 +29,6 @@ This command navigates to the Docker directory within your project and initiates
    ```
    show catalogs;
    show schemas from datalake;
-   select * from datalake.
    show tables from datalake.analytics_stage;
    select * from datalake.analytics_stage.stg_streams_hourly;
    ```
@@ -45,29 +44,29 @@ This command navigates to the Docker directory within your project and initiates
    ```
 
 5. **minio**:可以開localhost UI，帳號minio，密碼minio123。
-6. **broker & schema-registry**: 兩個是Kafka server有時候可能會關掉，要再開一次。
+6. **broker & schema-registry**: 兩個是Kafka server啟動compose有時候可能會關掉，要再開一次。
 
 ## Trino catalog
 
-會有5個catalog，可以由tirno連線。會存在trino Files中
+會有5個catalog，可以由tirno連線。會存在trino container Files中的etc/trino/catalog
 1. **datalake**:指向minio經由iceberg表格式管理。
 2. **hive**:指向minio經由hive表格式管理。
-3. **metastore_db**:指向metastore_db。為postgresql資料庫。儲存metadata
+3. **metastore_db**:指向metastore_db。為postgresql資料庫。儲存metadata。
 4. **oltp**:指向oltp。為postgresql的資料庫，儲存資料。
 5. **website**:mongodb。為mongodb資料庫，儲存資料。
 
 
 ## Integration with Kafka for Data Streaming
 
-To simulate real-time data streaming in a music event context, follow the instructions from the GitHub repository [Stefen-Taime/eventmusic](https://github.com/Stefen-Taime/eventmusic.git). This repository contains scripts and configurations necessary for producing messages to Kafka, which acts as the backbone for real-time data handling in this stack.
+To simulate real-time data streaming in a music event context, follow the instructions from the GitHub repository [Stefen-Taime/eventmusic](https://github.com/Stefen-Taime/eventmusic.git). This repository contains scripts and configurations necessary for producing messages to Kafka, which acts as the backbone for real-time data handling in this stack.(可以略過這段使用以下方法創建資料)
 
 ### Preparing Kafka Connectors
 
 After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:
-
    
 1. **Set Permissions for `install_connectors.sh`**: This script installs the necessary Kafka connectors for integrating with PostgreSQL and MongoDB. Adjust the file permissions to make it executable.
    ```
+   cd docker
    chmod +x install_connectors.sh
    ```
    
@@ -92,14 +91,40 @@ With the connectors installed:
 
 ## Run the Dbt Commands
 
+起虛擬環境抓dbt-trino件
+```
+cd dbt
+python -m venv dbt-env  
+
+source dbt-env/bin/activate         # activate the environment for Mac and Linux OR
+dbt-env\Scripts\activate            # activate the environment for Windows
+
+python -m pip install dbt-trino
+```
+
+check point
+```
+dbt --version
+---------------
+Core:
+  - installed: 1.8.2
+  - latest:    1.8.2 - Up to date!
+
+Plugins:
+  - trino: 1.8.0 - Up to date!
+```
+
 With the Trino server running, the next step is to execute the necessary Dbt commands to manage your data transformations:
 
 ```
 dbt deps
+dbt debug
 dbt run
 ```
 
-`dbt deps` fetches the project's dependencies, ensuring that all required packages and modules are available. `dbt run` then executes the transformations defined in your dbt project, building your data models according to the specifications in your dbt files.  
+`dbt deps` fetches the project's dependencies, ensuring that all required packages and modules are available.
+`dbt debug` will All checks passed.
+`dbt run` then executes the transformations defined in your dbt project, building your data models according to the specifications in your dbt files. Will PASS=13 WARN=0 ERROR=1 SKIP=1 TOTAL=15.
 
 ## Get Superset
 

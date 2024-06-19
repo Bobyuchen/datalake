@@ -11317,3 +11317,1758 @@ alter table "datalake"."analytics"."mart_user_activity_per_state__dbt_tmp" renam
 [0m15:21:58.597549 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m15:21:58.598068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F6000DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F757B850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3F26C4410>]}
 [0m15:21:58.598587 [debug] [MainThread]: Flushing usage events
+[0m10:13:23.772689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026735646CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026736837F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267368376D0>]}
+
+
+============================== 10:13:23.772689 | cbb67935-b3b1-4977-9361-092c40e39c42 ==============================
+[0m10:13:23.772689 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:13:23.787172 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:13:23.799160 [info ] [MainThread]: dbt version: 1.8.2
+[0m10:13:23.799160 [info ] [MainThread]: python version: 3.11.5
+[0m10:13:23.799160 [info ] [MainThread]: python path: C:\Users\ASUS\anaconda3\python.exe
+[0m10:13:23.799160 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m10:13:23.967747 [info ] [MainThread]: Using profiles dir at C:\Users\ASUS\Desktop\work\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\dbt
+[0m10:13:23.967747 [info ] [MainThread]: Using profiles.yml file at C:\Users\ASUS\Desktop\work\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\dbt\profiles.yml
+[0m10:13:23.969421 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ASUS\Desktop\work\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\dbt\dbt_project.yml
+[0m10:13:23.970039 [info ] [MainThread]: adapter type: trino
+[0m10:13:23.970039 [info ] [MainThread]: adapter version: 1.8.0
+[0m10:13:24.039332 [info ] [MainThread]: Configuration:
+[0m10:13:24.040330 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:13:24.040330 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:13:24.041340 [info ] [MainThread]: Required dependencies:
+[0m10:13:24.041340 [debug] [MainThread]: Executing "git --help"
+[0m10:13:24.120460 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:13:24.120460 [debug] [MainThread]: STDERR: "b''"
+[0m10:13:24.120460 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:13:24.120460 [info ] [MainThread]: Connection:
+[0m10:13:24.120460 [info ] [MainThread]:   host: localhost
+[0m10:13:24.120460 [info ] [MainThread]:   port: 8080
+[0m10:13:24.120460 [info ] [MainThread]:   user: admin
+[0m10:13:24.120460 [info ] [MainThread]:   database: datalake
+[0m10:13:24.135468 [info ] [MainThread]:   schema: analytics
+[0m10:13:24.135987 [info ] [MainThread]:   cert: None
+[0m10:13:24.135987 [info ] [MainThread]:   prepared_statements_enabled: True
+[0m10:13:24.135987 [info ] [MainThread]: Registered adapter: trino=1.8.0
+[0m10:13:24.135987 [debug] [MainThread]: Acquiring new trino connection 'debug'
+[0m10:13:24.300271 [debug] [MainThread]: Using trino connection "debug"
+[0m10:13:24.300271 [debug] [MainThread]: On debug: select 1 as id
+[0m10:13:24.300271 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:13:25.147410 [debug] [MainThread]: SQL status: SUCCESS in 1.0 seconds
+[0m10:13:25.147410 [debug] [MainThread]: On debug: Close
+[0m10:13:25.147410 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:13:25.147410 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:13:25.156433 [debug] [MainThread]: Command `dbt debug` succeeded at 10:13:25.156433 after 1.51 seconds
+[0m10:13:25.156433 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:13:25.156433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026734170DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267319443D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267318AE210>]}
+[0m10:13:25.156433 [debug] [MainThread]: Flushing usage events
+[0m10:17:26.904277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE045610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DDC47510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE0899D0>]}
+
+
+============================== 10:17:26.907276 | 76dabc3b-0c8c-492d-99bc-65db3419cd85 ==============================
+[0m10:17:26.907276 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:17:26.908275 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:17:27.336011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE089ED0>]}
+[0m10:17:27.370624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DB1C5250>]}
+[0m10:17:27.371624 [info ] [MainThread]: Registered adapter: trino=1.8.0
+[0m10:17:27.384592 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m10:17:27.598559 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:17:27.598559 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:17:27.631081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE0B0E10>]}
+[0m10:17:27.717291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE583E10>]}
+[0m10:17:27.717800 [info ] [MainThread]: Found 15 models, 7 data tests, 3 sources, 559 macros
+[0m10:17:27.717800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE7E9410>]}
+[0m10:17:27.719819 [info ] [MainThread]: 
+[0m10:17:27.720371 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m10:17:27.724402 [debug] [ThreadPool]: Acquiring new trino connection 'list_datalake'
+[0m10:17:27.784093 [debug] [ThreadPool]: Using trino connection "list_datalake"
+[0m10:17:27.785090 [debug] [ThreadPool]: On list_datalake: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake"} */
+
+    select schema_name
+    from "datalake".INFORMATION_SCHEMA.schemata
+[0m10:17:27.785090 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:17:28.324719 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m10:17:28.325724 [debug] [ThreadPool]: On list_datalake: Close
+[0m10:17:28.329264 [debug] [ThreadPool]: Using trino connection "list_datalake"
+[0m10:17:28.330269 [debug] [ThreadPool]: On list_datalake: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake"} */
+
+    select schema_name
+    from "datalake".INFORMATION_SCHEMA.schemata
+[0m10:17:28.330269 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:17:28.386123 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:28.386123 [debug] [ThreadPool]: On list_datalake: Close
+[0m10:17:28.389795 [debug] [ThreadPool]: Using trino connection "list_datalake"
+[0m10:17:28.389795 [debug] [ThreadPool]: On list_datalake: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake"} */
+
+    select schema_name
+    from "datalake".INFORMATION_SCHEMA.schemata
+[0m10:17:28.390796 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:17:28.453114 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:28.454124 [debug] [ThreadPool]: On list_datalake: Close
+[0m10:17:28.455123 [debug] [ThreadPool]: Acquiring new trino connection 'list_datalake_analytics_stage'
+[0m10:17:28.467107 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics_stage"
+[0m10:17:28.467107 [debug] [ThreadPool]: On list_datalake_analytics_stage: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics_stage"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics_stage') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics_stage'
+[0m10:17:28.467107 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:17:29.016756 [debug] [ThreadPool]: SQL status: SUCCESS in 1.0 seconds
+[0m10:17:29.017755 [debug] [ThreadPool]: On list_datalake_analytics_stage: ROLLBACK
+[0m10:17:29.017755 [debug] [ThreadPool]: On list_datalake_analytics_stage: Close
+[0m10:17:29.018757 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_datalake_analytics_stage, now list_datalake_analytics_source)
+[0m10:17:29.022781 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics_source"
+[0m10:17:29.022781 [debug] [ThreadPool]: On list_datalake_analytics_source: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics_source"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics_source') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics_source'
+[0m10:17:29.022781 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:17:29.242409 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:29.243421 [debug] [ThreadPool]: On list_datalake_analytics_source: ROLLBACK
+[0m10:17:29.244422 [debug] [ThreadPool]: On list_datalake_analytics_source: Close
+[0m10:17:29.244422 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_datalake_analytics_source, now list_datalake_analytics)
+[0m10:17:29.249852 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics"
+[0m10:17:29.250379 [debug] [ThreadPool]: On list_datalake_analytics: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics'
+[0m10:17:29.250905 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:17:29.424435 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:29.425443 [debug] [ThreadPool]: On list_datalake_analytics: ROLLBACK
+[0m10:17:29.426444 [debug] [ThreadPool]: On list_datalake_analytics: Close
+[0m10:17:29.427948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE52E450>]}
+[0m10:17:29.428964 [debug] [MainThread]: On master: COMMIT
+[0m10:17:29.428964 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:17:29.429975 [info ] [MainThread]: 
+[0m10:17:29.434016 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.src_auth_events
+[0m10:17:29.434525 [info ] [Thread-1 (]: 1 of 15 START sql table model analytics_source.src_auth_events ................. [RUN]
+[0m10:17:29.435538 [debug] [Thread-1 (]: Acquiring new trino connection 'model.my_dbt_trino_project.src_auth_events'
+[0m10:17:29.435538 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.src_auth_events
+[0m10:17:29.442059 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.src_auth_events"
+[0m10:17:29.443060 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.src_auth_events
+[0m10:17:29.475145 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.src_auth_events"
+[0m10:17:29.479142 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:17:29.480142 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+
+  
+    
+
+    create table "datalake"."analytics_source"."src_auth_events__dbt_tmp"
+      
+      
+    as (
+      
+
+with source as (
+    select
+        CAST(ts AS VARCHAR) as id, 
+        ts,
+        CAST(sessionId AS VARCHAR) as sessionId,
+        level,
+        itemInSession,
+        city,
+        zip,
+        state,
+        userAgent,
+        CAST(NULLIF(lon, '') AS double) as lon,
+        CAST(NULLIF(lat, '') AS double) as lat,
+        CAST(FLOOR(CAST(NULLIF(userId, '') AS DOUBLE)) AS INT) as userId, 
+        lastName,
+        firstName,
+        gender,
+        CAST(FLOOR(CAST(NULLIF(registration, '') AS DOUBLE)) AS BIGINT) as registration,
+        success
+    from "oltp"."public"."auth_events"
+)
+
+select
+    id,
+    ts,
+    sessionId,
+    level,
+    itemInSession,
+    city,
+    zip,
+    state,
+    userAgent,
+    lon,
+    lat,
+    userId,
+    lastName,
+    firstName,
+    gender,
+    registration, 
+    CASE 
+        WHEN CAST(success AS VARCHAR) = 't' THEN true 
+        WHEN CAST(success AS VARCHAR) = 'f' THEN false
+        ELSE NULL 
+    END AS success_boolean
+from source
+
+
+    )
+[0m10:17:29.480142 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:17:34.321219 [debug] [Thread-1 (]: SQL status: SUCCESS in 5.0 seconds
+[0m10:17:34.326260 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:17:34.327263 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+alter table "datalake"."analytics_source"."src_auth_events" rename to "datalake"."analytics_source"."src_auth_events__dbt_backup"
+[0m10:17:34.469440 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:34.472440 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:17:34.472440 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+alter table "datalake"."analytics_source"."src_auth_events__dbt_tmp" rename to "datalake"."analytics_source"."src_auth_events"
+[0m10:17:34.553013 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:34.558012 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_source"."src_auth_events__dbt_backup"
+[0m10:17:34.560010 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:17:34.560010 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+
+    drop table if exists "datalake"."analytics_source"."src_auth_events__dbt_backup"
+[0m10:17:34.809441 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:34.823968 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: ROLLBACK
+[0m10:17:34.824961 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: Close
+[0m10:17:34.826963 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DFE83B50>]}
+[0m10:17:34.827966 [info ] [Thread-1 (]: 1 of 15 OK created sql table model analytics_source.src_auth_events ............ [[32mSUCCESS[0m in 5.39s]
+[0m10:17:34.829138 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.src_auth_events
+[0m10:17:34.829138 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.src_listen_events
+[0m10:17:34.830147 [info ] [Thread-1 (]: 2 of 15 START sql incremental model analytics_source.src_listen_events ......... [RUN]
+[0m10:17:34.830147 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.src_auth_events, now model.my_dbt_trino_project.src_listen_events)
+[0m10:17:34.831527 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.src_listen_events
+[0m10:17:34.837534 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:34.838602 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.src_listen_events
+[0m10:17:34.865633 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:34.866631 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+  
+    
+
+    create table "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+      
+      
+    as (
+      
+
+with source as (
+
+    select
+        CAST(_id AS VARCHAR) as id,
+        artist,
+        song,
+        CAST(NULLIF(duration, '') AS DOUBLE) as duration,
+        ts,
+        sessionid,
+        auth,
+        level,
+        CAST(NULLIF(itemInSession, '') AS INTEGER) as itemInSession,
+        city,
+        zip,
+        state,
+        country,
+        userAgent,
+        CAST(NULLIF(lon, '') AS DOUBLE) as lon,
+        CAST(NULLIF(lat, '') AS DOUBLE) as lat,
+        CAST(CAST(NULLIF(userId, '') AS DOUBLE) AS INTEGER) as userId,
+ -- Assurez-vous que userId peut aussi être converti de cette manière.
+        lastName,
+        firstName,
+        gender,
+        CAST(CAST(NULLIF(registration, '') AS DOUBLE) AS BIGINT) as registration
+    from "website"."demo"."listen_events"
+
+)
+
+select * from source
+
+
+
+    -- this filter will only be applied on an incremental run
+    where ts > (select max(ts) from "datalake"."analytics_source"."src_listen_events")
+
+
+    )
+[0m10:17:34.866631 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:35.728738 [debug] [Thread-1 (]: SQL status: SUCCESS in 1.0 seconds
+[0m10:17:35.737799 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:35.738801 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    describe "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+[0m10:17:35.919528 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:35.923069 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:35.923580 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    describe "datalake"."analytics_source"."src_listen_events"
+[0m10:17:36.070643 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:36.077219 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:36.078218 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    describe "datalake"."analytics_source"."src_listen_events"
+[0m10:17:36.231817 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:36.241716 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:36.243293 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:36.243820 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+insert into "datalake"."analytics_source"."src_listen_events" ("id", "artist", "song", "duration", "ts", "sessionid", "auth", "level", "iteminsession", "city", "zip", "state", "country", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration")
+    (
+        select "id", "artist", "song", "duration", "ts", "sessionid", "auth", "level", "iteminsession", "city", "zip", "state", "country", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration"
+        from "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+    )
+[0m10:17:36.466795 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:36.469812 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+[0m10:17:36.470821 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:17:36.470821 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    drop table if exists "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+[0m10:17:36.623102 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:36.624110 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: ROLLBACK
+[0m10:17:36.625110 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: Close
+[0m10:17:36.625616 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE6A2AD0>]}
+[0m10:17:36.625616 [info ] [Thread-1 (]: 2 of 15 OK created sql incremental model analytics_source.src_listen_events .... [[32mSUCCESS[0m in 1.80s]
+[0m10:17:36.626625 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.src_listen_events
+[0m10:17:36.627625 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.src_page_view_events
+[0m10:17:36.627625 [info ] [Thread-1 (]: 3 of 15 START sql incremental model analytics_source.src_page_view_events ...... [RUN]
+[0m10:17:36.628625 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.src_listen_events, now model.my_dbt_trino_project.src_page_view_events)
+[0m10:17:36.628625 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.src_page_view_events
+[0m10:17:36.631682 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:36.633187 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.src_page_view_events
+[0m10:17:36.638194 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:36.639195 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+  
+    
+
+    create table "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+      
+      
+    as (
+      
+
+with source as (
+    select
+        CAST(_id AS VARCHAR) as id,
+        ts,
+        CAST(sessionId AS VARCHAR) as sessionId,
+        page,
+        auth,
+        level,
+        CAST(CAST(NULLIF(itemInSession, '') AS DOUBLE) AS INTEGER) as itemInSession, 
+        city,
+        zip,
+        state,
+        userAgent,
+        CAST(NULLIF(lon, '') AS double) as lon,
+        CAST(NULLIF(lat, '') AS double) as lat,
+        CAST(CAST(NULLIF(userId, '') AS DOUBLE) AS INTEGER) as userId, 
+        lastName,
+        firstName,
+        gender,
+        CAST(CAST(NULLIF(registration, '') AS DOUBLE) AS BIGINT) as registration, 
+        artist,
+        song,
+        CAST(NULLIF(duration, '') AS double) as duration
+    from "website"."demo"."page_view_events"
+)
+
+select * from source
+
+
+    where ts > (select max(ts) from "datalake"."analytics_source"."src_page_view_events")
+
+    )
+[0m10:17:36.639195 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:36.949772 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:36.951779 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:36.952778 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    describe "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+[0m10:17:37.081626 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:37.086149 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:37.086732 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    describe "datalake"."analytics_source"."src_page_view_events"
+[0m10:17:37.221614 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:37.278382 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:37.279381 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    describe "datalake"."analytics_source"."src_page_view_events"
+[0m10:17:37.406666 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:37.409179 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:37.412695 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:37.412695 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+insert into "datalake"."analytics_source"."src_page_view_events" ("id", "ts", "sessionid", "page", "auth", "level", "iteminsession", "city", "zip", "state", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration", "artist", "song", "duration")
+    (
+        select "id", "ts", "sessionid", "page", "auth", "level", "iteminsession", "city", "zip", "state", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration", "artist", "song", "duration"
+        from "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+    )
+[0m10:17:37.604770 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:37.608744 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+[0m10:17:37.609250 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:17:37.609250 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    drop table if exists "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+[0m10:17:37.761510 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:37.763659 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: ROLLBACK
+[0m10:17:37.763659 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: Close
+[0m10:17:37.764252 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DFFB1E10>]}
+[0m10:17:37.765291 [info ] [Thread-1 (]: 3 of 15 OK created sql incremental model analytics_source.src_page_view_events . [[32mSUCCESS[0m in 1.14s]
+[0m10:17:37.765821 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.src_page_view_events
+[0m10:17:37.766341 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:17:37.766857 [info ] [Thread-1 (]: 4 of 15 START sql view model analytics_stage.stg_user_level_by_gender .......... [RUN]
+[0m10:17:37.767384 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.src_page_view_events, now model.my_dbt_trino_project.stg_user_level_by_gender)
+[0m10:17:37.767384 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:17:37.770492 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_user_level_by_gender"
+[0m10:17:37.771493 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:17:37.786819 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_user_level_by_gender"
+[0m10:17:37.788407 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_user_level_by_gender"
+[0m10:17:37.788932 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_level_by_gender: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_user_level_by_gender"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_user_level_by_gender"
+  security definer
+  as
+    
+
+WITH user_subscriptions AS (
+    SELECT
+        gender,
+        level, 
+        COUNT(DISTINCT userId) AS user_count
+    FROM "datalake"."analytics_source"."src_auth_events"
+    WHERE gender IS NOT NULL AND level IS NOT NULL
+    GROUP BY gender, level
+)
+
+SELECT
+    gender,
+    level,
+    user_count
+FROM user_subscriptions
+  
+[0m10:17:37.789459 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:37.918980 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:37.920493 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_level_by_gender: ROLLBACK
+[0m10:17:37.920493 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_level_by_gender: Close
+[0m10:17:37.921497 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DDC47A10>]}
+[0m10:17:37.921497 [info ] [Thread-1 (]: 4 of 15 OK created sql view model analytics_stage.stg_user_level_by_gender ..... [[32mSUCCESS[0m in 0.15s]
+[0m10:17:37.922790 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:17:37.922790 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:17:37.923794 [info ] [Thread-1 (]: 5 of 15 START sql table model analytics_stage.stg_streams_hourly ............... [RUN]
+[0m10:17:37.923794 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_user_level_by_gender, now model.my_dbt_trino_project.stg_streams_hourly)
+[0m10:17:37.923794 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:17:37.927302 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:17:37.928208 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:17:37.930213 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:17:37.932212 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:17:37.932212 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+
+  
+    
+
+    create table "datalake"."analytics_stage"."stg_streams_hourly__dbt_tmp"
+      
+      
+    as (
+      
+
+SELECT
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%Y-%m-%d') AS stream_date, 
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%H') AS stream_hour,
+    COUNT(*) AS total_streams
+FROM "datalake"."analytics_source"."src_listen_events"
+GROUP BY
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%Y-%m-%d'),
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%H')
+    )
+[0m10:17:37.932212 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:38.498691 [debug] [Thread-1 (]: SQL status: SUCCESS in 1.0 seconds
+[0m10:17:38.501689 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:17:38.502687 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+alter table "datalake"."analytics_stage"."stg_streams_hourly" rename to "datalake"."analytics_stage"."stg_streams_hourly__dbt_backup"
+[0m10:17:38.605991 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:38.609998 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:17:38.610996 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+alter table "datalake"."analytics_stage"."stg_streams_hourly__dbt_tmp" rename to "datalake"."analytics_stage"."stg_streams_hourly"
+[0m10:17:38.712159 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:38.715462 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_stage"."stg_streams_hourly__dbt_backup"
+[0m10:17:38.716461 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:17:38.716461 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+
+    drop table if exists "datalake"."analytics_stage"."stg_streams_hourly__dbt_backup"
+[0m10:17:38.825974 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:38.826985 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: ROLLBACK
+[0m10:17:38.827983 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: Close
+[0m10:17:38.827983 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DFF35510>]}
+[0m10:17:38.828981 [info ] [Thread-1 (]: 5 of 15 OK created sql table model analytics_stage.stg_streams_hourly .......... [[32mSUCCESS[0m in 0.90s]
+[0m10:17:38.829983 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:17:38.829983 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:17:38.830983 [info ] [Thread-1 (]: 6 of 15 START sql view model analytics_stage.stg_top_songs_artists ............. [RUN]
+[0m10:17:38.830983 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_streams_hourly, now model.my_dbt_trino_project.stg_top_songs_artists)
+[0m10:17:38.831983 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:17:38.833982 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_top_songs_artists"
+[0m10:17:38.834992 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:17:38.836994 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_top_songs_artists"
+[0m10:17:38.837994 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_top_songs_artists"
+[0m10:17:38.838993 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_top_songs_artists: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_top_songs_artists"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_top_songs_artists"
+  security definer
+  as
+    
+
+WITH song_plays AS (
+    SELECT
+        artist,
+        song,
+        COUNT(*) AS play_count
+    FROM "datalake"."analytics_source"."src_listen_events"
+    GROUP BY artist, song
+)
+
+SELECT
+    artist,
+    song,
+    play_count
+FROM song_plays
+ORDER BY play_count DESC
+  
+[0m10:17:38.838993 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:38.935319 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:38.937318 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_top_songs_artists: ROLLBACK
+[0m10:17:38.937318 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_top_songs_artists: Close
+[0m10:17:38.937318 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DA1C3A10>]}
+[0m10:17:38.938321 [info ] [Thread-1 (]: 6 of 15 OK created sql view model analytics_stage.stg_top_songs_artists ........ [[32mSUCCESS[0m in 0.11s]
+[0m10:17:38.939320 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:17:38.939320 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_unique_users
+[0m10:17:38.940318 [info ] [Thread-1 (]: 7 of 15 START sql view model analytics_stage.stg_unique_users .................. [RUN]
+[0m10:17:38.940318 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_top_songs_artists, now model.my_dbt_trino_project.stg_unique_users)
+[0m10:17:38.940318 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_unique_users
+[0m10:17:38.943319 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_unique_users"
+[0m10:17:38.944318 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_unique_users
+[0m10:17:38.946686 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_unique_users"
+[0m10:17:38.947696 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_unique_users"
+[0m10:17:38.947696 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_unique_users: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_unique_users"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_unique_users"
+  security definer
+  as
+    
+
+SELECT
+    COUNT(DISTINCT userid) AS total_unique_users
+FROM "datalake"."analytics_source"."src_listen_events"
+WHERE userid IS NOT NULL
+  
+[0m10:17:38.947696 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:39.031400 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:39.033409 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_unique_users: ROLLBACK
+[0m10:17:39.033409 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_unique_users: Close
+[0m10:17:39.033409 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE078E90>]}
+[0m10:17:39.034406 [info ] [Thread-1 (]: 7 of 15 OK created sql view model analytics_stage.stg_unique_users ............. [[32mSUCCESS[0m in 0.09s]
+[0m10:17:39.035408 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_unique_users
+[0m10:17:39.035408 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:17:39.036410 [info ] [Thread-1 (]: 8 of 15 START sql view model analytics_stage.stg_user_activity_per_country ..... [RUN]
+[0m10:17:39.036410 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_unique_users, now model.my_dbt_trino_project.stg_user_activity_per_country)
+[0m10:17:39.037527 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:17:39.039531 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_user_activity_per_country"
+[0m10:17:39.040534 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:17:39.043048 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_user_activity_per_country"
+[0m10:17:39.044056 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_user_activity_per_country"
+[0m10:17:39.044056 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_country: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_user_activity_per_country"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_user_activity_per_country"
+  security definer
+  as
+    
+
+WITH combined_activities AS (
+  SELECT
+    country,
+    'listen_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_listen_events"
+  WHERE country IS NOT NULL
+  UNION ALL
+  SELECT
+    'Unknown' AS country, 
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_auth_events"
+  UNION ALL
+  SELECT
+    'Unknown' AS country, 
+    'page_view_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_page_view_events"
+)
+
+SELECT
+  country,
+  COUNT(*) AS activity_count
+FROM combined_activities
+GROUP BY country
+  
+[0m10:17:39.045531 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:39.127309 [debug] [Thread-1 (]: Trino adapter: Trino query id: 20240619_021739_00030_uxt54
+[0m10:17:39.127824 [debug] [Thread-1 (]: Trino adapter: Trino error: TrinoUserError(type=USER_ERROR, name=TYPE_MISMATCH, message="line 17:3: UNION query has different number of fields: 4, 3", query_id=20240619_021739_00030_uxt54)
+[0m10:17:39.128831 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_country: ROLLBACK
+[0m10:17:39.128831 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_country: Close
+[0m10:17:39.136935 [debug] [Thread-1 (]: Database Error in model stg_user_activity_per_country (models\stage\stg_user_activity_per_country.sql)
+  TrinoUserError(type=USER_ERROR, name=TYPE_MISMATCH, message="line 17:3: UNION query has different number of fields: 4, 3", query_id=20240619_021739_00030_uxt54)
+  compiled Code at target\run\my_dbt_trino_project\models\stage\stg_user_activity_per_country.sql
+[0m10:17:39.137944 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DFF86A90>]}
+[0m10:17:39.139156 [error] [Thread-1 (]: 8 of 15 ERROR creating sql view model analytics_stage.stg_user_activity_per_country  [[31mERROR[0m in 0.10s]
+[0m10:17:39.140165 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:17:39.140165 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:17:39.141165 [info ] [Thread-1 (]: 9 of 15 START sql view model analytics_stage.stg_user_activity_per_location .... [RUN]
+[0m10:17:39.141165 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_user_activity_per_country, now model.my_dbt_trino_project.stg_user_activity_per_location)
+[0m10:17:39.141165 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:17:39.144369 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_user_activity_per_location"
+[0m10:17:39.145369 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:17:39.149877 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_user_activity_per_location"
+[0m10:17:39.151503 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_user_activity_per_location"
+[0m10:17:39.152504 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_location: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_user_activity_per_location"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_user_activity_per_location"
+  security definer
+  as
+    
+
+WITH combined_activities AS (
+  SELECT
+    city,
+    state,
+    'auth_event' AS event_type,
+    ts,
+    userid
+ FROM "datalake"."analytics_source"."src_auth_events"
+  UNION ALL
+  SELECT
+    city,
+    state,
+    'listen_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_listen_events"
+  UNION ALL
+  SELECT
+    city,
+    state,
+    'page_view_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_page_view_events"
+)
+
+SELECT
+  state,
+  city,
+  COUNT(*) AS activity_count
+FROM combined_activities
+GROUP BY state, city
+  
+[0m10:17:39.152504 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:39.266839 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:39.269347 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_location: ROLLBACK
+[0m10:17:39.269347 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_location: Close
+[0m10:17:39.270357 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DB1C6E10>]}
+[0m10:17:39.270357 [info ] [Thread-1 (]: 9 of 15 OK created sql view model analytics_stage.stg_user_activity_per_location  [[32mSUCCESS[0m in 0.13s]
+[0m10:17:39.271973 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:17:39.271973 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.mart_user_level_by_gender
+[0m10:17:39.271973 [info ] [Thread-1 (]: 10 of 15 START sql table model analytics.mart_user_level_by_gender ............. [RUN]
+[0m10:17:39.273478 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_user_activity_per_location, now model.my_dbt_trino_project.mart_user_level_by_gender)
+[0m10:17:39.273478 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.mart_user_level_by_gender
+[0m10:17:39.276487 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.mart_user_level_by_gender"
+[0m10:17:39.276487 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.mart_user_level_by_gender
+[0m10:17:39.280484 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.mart_user_level_by_gender"
+[0m10:17:39.281487 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_level_by_gender"
+[0m10:17:39.282484 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_level_by_gender: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_level_by_gender"} */
+
+  
+    
+
+    create table "datalake"."analytics"."mart_user_level_by_gender__dbt_tmp"
+      
+      
+    as (
+      
+
+SELECT
+    gender,
+    level,
+    SUM(user_count) AS total_users,
+    ROUND(SUM(user_count) * 100.0 / SUM(SUM(user_count)) OVER (), 2) AS percentage_of_total_users
+FROM "datalake"."analytics_stage"."stg_user_level_by_gender"
+GROUP BY gender, level
+    )
+[0m10:17:39.282484 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:39.824812 [debug] [Thread-1 (]: SQL status: SUCCESS in 1.0 seconds
+[0m10:17:39.828034 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_level_by_gender"
+[0m10:17:39.829033 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_level_by_gender: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_level_by_gender"} */
+alter table "datalake"."analytics"."mart_user_level_by_gender" rename to "datalake"."analytics"."mart_user_level_by_gender__dbt_backup"
+[0m10:17:39.933499 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:39.936651 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_level_by_gender"
+[0m10:17:39.936651 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_level_by_gender: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_level_by_gender"} */
+alter table "datalake"."analytics"."mart_user_level_by_gender__dbt_tmp" rename to "datalake"."analytics"."mart_user_level_by_gender"
+[0m10:17:39.989322 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:39.991826 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics"."mart_user_level_by_gender__dbt_backup"
+[0m10:17:39.992836 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_level_by_gender"
+[0m10:17:39.992836 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_level_by_gender: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_level_by_gender"} */
+
+    drop table if exists "datalake"."analytics"."mart_user_level_by_gender__dbt_backup"
+[0m10:17:40.152026 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:40.154037 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_level_by_gender: ROLLBACK
+[0m10:17:40.154037 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_level_by_gender: Close
+[0m10:17:40.155038 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DFAA2310>]}
+[0m10:17:40.155038 [info ] [Thread-1 (]: 10 of 15 OK created sql table model analytics.mart_user_level_by_gender ........ [[32mSUCCESS[0m in 0.88s]
+[0m10:17:40.156036 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.mart_user_level_by_gender
+[0m10:17:40.157055 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.mart_hourly_stream_evolution
+[0m10:17:40.157055 [info ] [Thread-1 (]: 11 of 15 START sql table model analytics.mart_hourly_stream_evolution .......... [RUN]
+[0m10:17:40.157055 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.mart_user_level_by_gender, now model.my_dbt_trino_project.mart_hourly_stream_evolution)
+[0m10:17:40.158054 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.mart_hourly_stream_evolution
+[0m10:17:40.160054 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.mart_hourly_stream_evolution"
+[0m10:17:40.161053 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.mart_hourly_stream_evolution
+[0m10:17:40.164055 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.mart_hourly_stream_evolution"
+[0m10:17:40.166258 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_hourly_stream_evolution"
+[0m10:17:40.166769 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_hourly_stream_evolution: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_hourly_stream_evolution"} */
+
+  
+    
+
+    create table "datalake"."analytics"."mart_hourly_stream_evolution__dbt_tmp"
+      
+      
+    as (
+      
+
+SELECT
+    stream_date,
+    stream_hour,
+    total_streams,
+    SUM(total_streams) OVER (PARTITION BY stream_date ORDER BY stream_hour) AS cumulative_streams
+FROM "datalake"."analytics_stage"."stg_streams_hourly"
+ORDER BY
+    stream_date,
+    stream_hour
+    )
+[0m10:17:40.166769 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:40.485701 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:40.488709 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_hourly_stream_evolution"
+[0m10:17:40.489706 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_hourly_stream_evolution: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_hourly_stream_evolution"} */
+alter table "datalake"."analytics"."mart_hourly_stream_evolution" rename to "datalake"."analytics"."mart_hourly_stream_evolution__dbt_backup"
+[0m10:17:40.587415 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:40.592427 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_hourly_stream_evolution"
+[0m10:17:40.593427 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_hourly_stream_evolution: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_hourly_stream_evolution"} */
+alter table "datalake"."analytics"."mart_hourly_stream_evolution__dbt_tmp" rename to "datalake"."analytics"."mart_hourly_stream_evolution"
+[0m10:17:40.695620 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:40.698628 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics"."mart_hourly_stream_evolution__dbt_backup"
+[0m10:17:40.699628 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_hourly_stream_evolution"
+[0m10:17:40.699628 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_hourly_stream_evolution: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_hourly_stream_evolution"} */
+
+    drop table if exists "datalake"."analytics"."mart_hourly_stream_evolution__dbt_backup"
+[0m10:17:40.855161 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:40.857629 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_hourly_stream_evolution: ROLLBACK
+[0m10:17:40.857629 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_hourly_stream_evolution: Close
+[0m10:17:40.857629 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DFF36510>]}
+[0m10:17:40.859048 [info ] [Thread-1 (]: 11 of 15 OK created sql table model analytics.mart_hourly_stream_evolution ..... [[32mSUCCESS[0m in 0.70s]
+[0m10:17:40.859048 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.mart_hourly_stream_evolution
+[0m10:17:40.860057 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.mart_top_songs_artists
+[0m10:17:40.860057 [info ] [Thread-1 (]: 12 of 15 START sql table model analytics.mart_top_songs_artists ................ [RUN]
+[0m10:17:40.860057 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.mart_hourly_stream_evolution, now model.my_dbt_trino_project.mart_top_songs_artists)
+[0m10:17:40.860057 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.mart_top_songs_artists
+[0m10:17:40.863479 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.mart_top_songs_artists"
+[0m10:17:40.863479 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.mart_top_songs_artists
+[0m10:17:40.866269 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.mart_top_songs_artists"
+[0m10:17:40.867710 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_top_songs_artists"
+[0m10:17:40.867710 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_top_songs_artists: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_top_songs_artists"} */
+
+  
+    
+
+    create table "datalake"."analytics"."mart_top_songs_artists__dbt_tmp"
+      
+      
+    as (
+      
+
+WITH top_songs AS (
+    SELECT
+        artist,
+        song,
+        play_count
+    FROM "datalake"."analytics_stage"."stg_top_songs_artists"
+)
+
+SELECT
+    artist,
+    song,
+    play_count
+FROM top_songs
+    )
+[0m10:17:40.867710 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:41.196279 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:41.199474 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_top_songs_artists"
+[0m10:17:41.200008 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_top_songs_artists: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_top_songs_artists"} */
+alter table "datalake"."analytics"."mart_top_songs_artists" rename to "datalake"."analytics"."mart_top_songs_artists__dbt_backup"
+[0m10:17:41.300256 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:41.303253 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_top_songs_artists"
+[0m10:17:41.303253 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_top_songs_artists: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_top_songs_artists"} */
+alter table "datalake"."analytics"."mart_top_songs_artists__dbt_tmp" rename to "datalake"."analytics"."mart_top_songs_artists"
+[0m10:17:41.352483 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:41.355480 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics"."mart_top_songs_artists__dbt_backup"
+[0m10:17:41.356479 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_top_songs_artists"
+[0m10:17:41.356479 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_top_songs_artists: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_top_songs_artists"} */
+
+    drop table if exists "datalake"."analytics"."mart_top_songs_artists__dbt_backup"
+[0m10:17:41.505931 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:41.507928 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_top_songs_artists: ROLLBACK
+[0m10:17:41.507928 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_top_songs_artists: Close
+[0m10:17:41.508929 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE483C90>]}
+[0m10:17:41.508929 [info ] [Thread-1 (]: 12 of 15 OK created sql table model analytics.mart_top_songs_artists ........... [[32mSUCCESS[0m in 0.65s]
+[0m10:17:41.509926 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.mart_top_songs_artists
+[0m10:17:41.509926 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.mart_total_unique_users
+[0m10:17:41.510926 [info ] [Thread-1 (]: 13 of 15 START sql table model analytics.mart_total_unique_users ............... [RUN]
+[0m10:17:41.511392 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.mart_top_songs_artists, now model.my_dbt_trino_project.mart_total_unique_users)
+[0m10:17:41.511392 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.mart_total_unique_users
+[0m10:17:41.514403 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.mart_total_unique_users"
+[0m10:17:41.515046 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.mart_total_unique_users
+[0m10:17:41.518060 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.mart_total_unique_users"
+[0m10:17:41.519056 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_total_unique_users"
+[0m10:17:41.519056 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_total_unique_users: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_total_unique_users"} */
+
+  
+    
+
+    create table "datalake"."analytics"."mart_total_unique_users__dbt_tmp"
+      
+      
+    as (
+      
+
+SELECT
+    total_unique_users
+FROM "datalake"."analytics_stage"."stg_unique_users"
+    )
+[0m10:17:41.519056 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:41.891582 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:41.895581 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_total_unique_users"
+[0m10:17:41.896584 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_total_unique_users: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_total_unique_users"} */
+alter table "datalake"."analytics"."mart_total_unique_users" rename to "datalake"."analytics"."mart_total_unique_users__dbt_backup"
+[0m10:17:41.995534 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:41.998045 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_total_unique_users"
+[0m10:17:41.998045 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_total_unique_users: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_total_unique_users"} */
+alter table "datalake"."analytics"."mart_total_unique_users__dbt_tmp" rename to "datalake"."analytics"."mart_total_unique_users"
+[0m10:17:42.107517 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:42.110525 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics"."mart_total_unique_users__dbt_backup"
+[0m10:17:42.110525 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_total_unique_users"
+[0m10:17:42.111533 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_total_unique_users: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_total_unique_users"} */
+
+    drop table if exists "datalake"."analytics"."mart_total_unique_users__dbt_backup"
+[0m10:17:42.259040 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:42.260542 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_total_unique_users: ROLLBACK
+[0m10:17:42.260542 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_total_unique_users: Close
+[0m10:17:42.261981 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DDD30590>]}
+[0m10:17:42.262986 [info ] [Thread-1 (]: 13 of 15 OK created sql table model analytics.mart_total_unique_users .......... [[32mSUCCESS[0m in 0.75s]
+[0m10:17:42.262986 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.mart_total_unique_users
+[0m10:17:42.262986 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.mart_user_activity_per_country
+[0m10:17:42.264442 [info ] [Thread-1 (]: 14 of 15 SKIP relation analytics.mart_user_activity_per_country ................ [[33mSKIP[0m]
+[0m10:17:42.264442 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.mart_user_activity_per_country
+[0m10:17:42.265448 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.mart_user_activity_per_state
+[0m10:17:42.265448 [info ] [Thread-1 (]: 15 of 15 START sql table model analytics.mart_user_activity_per_state .......... [RUN]
+[0m10:17:42.265448 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.mart_total_unique_users, now model.my_dbt_trino_project.mart_user_activity_per_state)
+[0m10:17:42.266688 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.mart_user_activity_per_state
+[0m10:17:42.269694 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.mart_user_activity_per_state"
+[0m10:17:42.270695 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.mart_user_activity_per_state
+[0m10:17:42.273241 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.mart_user_activity_per_state"
+[0m10:17:42.274808 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_activity_per_state"
+[0m10:17:42.274808 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_activity_per_state: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_activity_per_state"} */
+
+  
+    
+
+    create table "datalake"."analytics"."mart_user_activity_per_state__dbt_tmp"
+      
+      
+    as (
+      
+
+SELECT
+  state,
+  city,
+  SUM(activity_count) AS total_activity
+FROM "datalake"."analytics_stage"."stg_user_activity_per_location"
+GROUP BY state, city
+ORDER BY state, SUM(activity_count) DESC
+    )
+[0m10:17:42.275814 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:42.690936 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:42.694063 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_activity_per_state"
+[0m10:17:42.694585 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_activity_per_state: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_activity_per_state"} */
+alter table "datalake"."analytics"."mart_user_activity_per_state" rename to "datalake"."analytics"."mart_user_activity_per_state__dbt_backup"
+[0m10:17:42.791119 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:42.794126 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_activity_per_state"
+[0m10:17:42.795129 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_activity_per_state: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_activity_per_state"} */
+alter table "datalake"."analytics"."mart_user_activity_per_state__dbt_tmp" rename to "datalake"."analytics"."mart_user_activity_per_state"
+[0m10:17:42.897512 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:42.899793 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics"."mart_user_activity_per_state__dbt_backup"
+[0m10:17:42.901258 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.mart_user_activity_per_state"
+[0m10:17:42.901258 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_activity_per_state: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.mart_user_activity_per_state"} */
+
+    drop table if exists "datalake"."analytics"."mart_user_activity_per_state__dbt_backup"
+[0m10:17:43.058378 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:17:43.059374 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_activity_per_state: ROLLBACK
+[0m10:17:43.060374 [debug] [Thread-1 (]: On model.my_dbt_trino_project.mart_user_activity_per_state: Close
+[0m10:17:43.060374 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76dabc3b-0c8c-492d-99bc-65db3419cd85', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DFE81850>]}
+[0m10:17:43.061377 [info ] [Thread-1 (]: 15 of 15 OK created sql table model analytics.mart_user_activity_per_state ..... [[32mSUCCESS[0m in 0.79s]
+[0m10:17:43.062375 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.mart_user_activity_per_state
+[0m10:17:43.063374 [debug] [MainThread]: On master: COMMIT
+[0m10:17:43.063374 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:17:43.063374 [debug] [MainThread]: Connection 'list_datalake' was properly closed.
+[0m10:17:43.064374 [debug] [MainThread]: Connection 'list_datalake_analytics' was properly closed.
+[0m10:17:43.064374 [debug] [MainThread]: Connection 'model.my_dbt_trino_project.mart_user_activity_per_state' was properly closed.
+[0m10:17:43.064374 [info ] [MainThread]: 
+[0m10:17:43.065374 [info ] [MainThread]: Finished running 8 table models, 2 incremental models, 5 view models in 0 hours 0 minutes and 15.34 seconds (15.34s).
+[0m10:17:43.067375 [debug] [MainThread]: Command end result
+[0m10:17:43.097421 [info ] [MainThread]: 
+[0m10:17:43.098596 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:17:43.098596 [info ] [MainThread]: 
+[0m10:17:43.099607 [error] [MainThread]:   Database Error in model stg_user_activity_per_country (models\stage\stg_user_activity_per_country.sql)
+  TrinoUserError(type=USER_ERROR, name=TYPE_MISMATCH, message="line 17:3: UNION query has different number of fields: 4, 3", query_id=20240619_021739_00030_uxt54)
+  compiled Code at target\run\my_dbt_trino_project\models\stage\stg_user_activity_per_country.sql
+[0m10:17:43.101092 [info ] [MainThread]: 
+[0m10:17:43.101092 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=1 SKIP=1 TOTAL=15
+[0m10:17:43.103099 [debug] [MainThread]: Command `dbt run` failed at 10:17:43.102100 after 16.35 seconds
+[0m10:17:43.103099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DD0C8DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE0BB7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2DE0BBED0>]}
+[0m10:17:43.103099 [debug] [MainThread]: Flushing usage events
+[0m10:20:03.432785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B32D56B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B32957910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B3274D390>]}
+
+
+============================== 10:20:03.434794 | 819bf140-452d-4f11-8728-afb48875a71d ==============================
+[0m10:20:03.434794 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:20:03.435791 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt\\logs', 'profiles_dir': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --models source', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:20:03.746031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B32D94D10>]}
+[0m10:20:03.780770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B2FED5250>]}
+[0m10:20:03.780770 [info ] [MainThread]: Registered adapter: trino=1.8.0
+[0m10:20:03.791772 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m10:20:03.941872 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:20:03.941872 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:20:03.969873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B333DBE90>]}
+[0m10:20:04.034387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B332A3C90>]}
+[0m10:20:04.034387 [info ] [MainThread]: Found 15 models, 7 data tests, 3 sources, 559 macros
+[0m10:20:04.035387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B334FA2D0>]}
+[0m10:20:04.036388 [info ] [MainThread]: 
+[0m10:20:04.037389 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m10:20:04.040396 [debug] [ThreadPool]: Acquiring new trino connection 'list_datalake'
+[0m10:20:04.096832 [debug] [ThreadPool]: Using trino connection "list_datalake"
+[0m10:20:04.096832 [debug] [ThreadPool]: On list_datalake: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake"} */
+
+    select schema_name
+    from "datalake".INFORMATION_SCHEMA.schemata
+[0m10:20:04.097832 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:20:04.167422 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:04.168421 [debug] [ThreadPool]: On list_datalake: Close
+[0m10:20:04.169920 [debug] [ThreadPool]: Acquiring new trino connection 'list_datalake_analytics'
+[0m10:20:04.180218 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics"
+[0m10:20:04.181218 [debug] [ThreadPool]: On list_datalake_analytics: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics'
+[0m10:20:04.181218 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:20:04.268124 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:04.269269 [debug] [ThreadPool]: On list_datalake_analytics: ROLLBACK
+[0m10:20:04.269269 [debug] [ThreadPool]: On list_datalake_analytics: Close
+[0m10:20:04.270295 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_datalake_analytics, now list_datalake_analytics_stage)
+[0m10:20:04.274543 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics_stage"
+[0m10:20:04.274543 [debug] [ThreadPool]: On list_datalake_analytics_stage: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics_stage"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics_stage') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics_stage'
+[0m10:20:04.274543 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:20:04.362258 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:04.363270 [debug] [ThreadPool]: On list_datalake_analytics_stage: ROLLBACK
+[0m10:20:04.363270 [debug] [ThreadPool]: On list_datalake_analytics_stage: Close
+[0m10:20:04.364701 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_datalake_analytics_stage, now list_datalake_analytics_source)
+[0m10:20:04.369786 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics_source"
+[0m10:20:04.369786 [debug] [ThreadPool]: On list_datalake_analytics_source: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics_source"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics_source') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics_source'
+[0m10:20:04.369786 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:20:04.452803 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:04.453803 [debug] [ThreadPool]: On list_datalake_analytics_source: ROLLBACK
+[0m10:20:04.453803 [debug] [ThreadPool]: On list_datalake_analytics_source: Close
+[0m10:20:04.454803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B333077D0>]}
+[0m10:20:04.456227 [debug] [MainThread]: On master: COMMIT
+[0m10:20:04.456227 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:20:04.457242 [info ] [MainThread]: 
+[0m10:20:04.459243 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.src_auth_events
+[0m10:20:04.459243 [info ] [Thread-1 (]: 1 of 3 START sql table model analytics_source.src_auth_events .................. [RUN]
+[0m10:20:04.460750 [debug] [Thread-1 (]: Acquiring new trino connection 'model.my_dbt_trino_project.src_auth_events'
+[0m10:20:04.460750 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.src_auth_events
+[0m10:20:04.466758 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.src_auth_events"
+[0m10:20:04.467757 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.src_auth_events
+[0m10:20:04.498964 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.src_auth_events"
+[0m10:20:04.502971 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:20:04.503974 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+
+  
+    
+
+    create table "datalake"."analytics_source"."src_auth_events__dbt_tmp"
+      
+      
+    as (
+      
+
+with source as (
+    select
+        CAST(ts AS VARCHAR) as id, 
+        ts,
+        CAST(sessionId AS VARCHAR) as sessionId,
+        level,
+        itemInSession,
+        city,
+        zip,
+        state,
+        userAgent,
+        CAST(NULLIF(lon, '') AS double) as lon,
+        CAST(NULLIF(lat, '') AS double) as lat,
+        CAST(FLOOR(CAST(NULLIF(userId, '') AS DOUBLE)) AS INT) as userId, 
+        lastName,
+        firstName,
+        gender,
+        CAST(FLOOR(CAST(NULLIF(registration, '') AS DOUBLE)) AS BIGINT) as registration,
+        success
+    from "oltp"."public"."auth_events"
+)
+
+select
+    id,
+    ts,
+    sessionId,
+    level,
+    itemInSession,
+    city,
+    zip,
+    state,
+    userAgent,
+    lon,
+    lat,
+    userId,
+    lastName,
+    firstName,
+    gender,
+    registration, 
+    CASE 
+        WHEN CAST(success AS VARCHAR) = 't' THEN true 
+        WHEN CAST(success AS VARCHAR) = 'f' THEN false
+        ELSE NULL 
+    END AS success_boolean
+from source
+
+
+    )
+[0m10:20:04.503974 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:20:04.811838 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:04.817371 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:20:04.818371 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+alter table "datalake"."analytics_source"."src_auth_events" rename to "datalake"."analytics_source"."src_auth_events__dbt_backup"
+[0m10:20:04.917688 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:04.920616 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:20:04.921626 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+alter table "datalake"."analytics_source"."src_auth_events__dbt_tmp" rename to "datalake"."analytics_source"."src_auth_events"
+[0m10:20:05.025494 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:05.032009 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_source"."src_auth_events__dbt_backup"
+[0m10:20:05.034008 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_auth_events"
+[0m10:20:05.034008 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_auth_events"} */
+
+    drop table if exists "datalake"."analytics_source"."src_auth_events__dbt_backup"
+[0m10:20:05.175976 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:05.187973 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: ROLLBACK
+[0m10:20:05.188977 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_auth_events: Close
+[0m10:20:05.190387 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B33BACB90>]}
+[0m10:20:05.190387 [info ] [Thread-1 (]: 1 of 3 OK created sql table model analytics_source.src_auth_events ............. [[32mSUCCESS[0m in 0.73s]
+[0m10:20:05.191393 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.src_auth_events
+[0m10:20:05.192393 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.src_listen_events
+[0m10:20:05.192393 [info ] [Thread-1 (]: 2 of 3 START sql incremental model analytics_source.src_listen_events .......... [RUN]
+[0m10:20:05.193422 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.src_auth_events, now model.my_dbt_trino_project.src_listen_events)
+[0m10:20:05.193938 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.src_listen_events
+[0m10:20:05.198093 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:05.198614 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.src_listen_events
+[0m10:20:05.225351 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:05.225871 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+  
+    
+
+    create table "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+      
+      
+    as (
+      
+
+with source as (
+
+    select
+        CAST(_id AS VARCHAR) as id,
+        artist,
+        song,
+        CAST(NULLIF(duration, '') AS DOUBLE) as duration,
+        ts,
+        sessionid,
+        auth,
+        level,
+        CAST(NULLIF(itemInSession, '') AS INTEGER) as itemInSession,
+        city,
+        zip,
+        state,
+        country,
+        userAgent,
+        CAST(NULLIF(lon, '') AS DOUBLE) as lon,
+        CAST(NULLIF(lat, '') AS DOUBLE) as lat,
+        CAST(CAST(NULLIF(userId, '') AS DOUBLE) AS INTEGER) as userId,
+ -- Assurez-vous que userId peut aussi être converti de cette manière.
+        lastName,
+        firstName,
+        gender,
+        CAST(CAST(NULLIF(registration, '') AS DOUBLE) AS BIGINT) as registration
+    from "website"."demo"."listen_events"
+
+)
+
+select * from source
+
+
+
+    -- this filter will only be applied on an incremental run
+    where ts > (select max(ts) from "datalake"."analytics_source"."src_listen_events")
+
+
+    )
+[0m10:20:05.226392 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:20:05.543770 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:05.552031 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:05.553034 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    describe "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+[0m10:20:05.648620 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:05.652281 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:05.652281 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    describe "datalake"."analytics_source"."src_listen_events"
+[0m10:20:05.762338 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:05.769873 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:05.770874 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    describe "datalake"."analytics_source"."src_listen_events"
+[0m10:20:05.875360 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:05.883814 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:05.885823 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:05.885823 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+insert into "datalake"."analytics_source"."src_listen_events" ("id", "artist", "song", "duration", "ts", "sessionid", "auth", "level", "iteminsession", "city", "zip", "state", "country", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration")
+    (
+        select "id", "artist", "song", "duration", "ts", "sessionid", "auth", "level", "iteminsession", "city", "zip", "state", "country", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration"
+        from "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+    )
+[0m10:20:06.023711 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.027825 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+[0m10:20:06.027825 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_listen_events"
+[0m10:20:06.028825 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_listen_events"} */
+
+    drop table if exists "datalake"."analytics_source"."src_listen_events__dbt_tmp"
+[0m10:20:06.156790 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.158866 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: ROLLBACK
+[0m10:20:06.158866 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_listen_events: Close
+[0m10:20:06.159898 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B337482D0>]}
+[0m10:20:06.160421 [info ] [Thread-1 (]: 2 of 3 OK created sql incremental model analytics_source.src_listen_events ..... [[32mSUCCESS[0m in 0.97s]
+[0m10:20:06.161466 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.src_listen_events
+[0m10:20:06.161466 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.src_page_view_events
+[0m10:20:06.162000 [info ] [Thread-1 (]: 3 of 3 START sql incremental model analytics_source.src_page_view_events ....... [RUN]
+[0m10:20:06.162536 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.src_listen_events, now model.my_dbt_trino_project.src_page_view_events)
+[0m10:20:06.163071 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.src_page_view_events
+[0m10:20:06.166219 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.166747 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.src_page_view_events
+[0m10:20:06.173583 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.174125 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+  
+    
+
+    create table "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+      
+      
+    as (
+      
+
+with source as (
+    select
+        CAST(_id AS VARCHAR) as id,
+        ts,
+        CAST(sessionId AS VARCHAR) as sessionId,
+        page,
+        auth,
+        level,
+        CAST(CAST(NULLIF(itemInSession, '') AS DOUBLE) AS INTEGER) as itemInSession, 
+        city,
+        zip,
+        state,
+        userAgent,
+        CAST(NULLIF(lon, '') AS double) as lon,
+        CAST(NULLIF(lat, '') AS double) as lat,
+        CAST(CAST(NULLIF(userId, '') AS DOUBLE) AS INTEGER) as userId, 
+        lastName,
+        firstName,
+        gender,
+        CAST(CAST(NULLIF(registration, '') AS DOUBLE) AS BIGINT) as registration, 
+        artist,
+        song,
+        CAST(NULLIF(duration, '') AS double) as duration
+    from "website"."demo"."page_view_events"
+)
+
+select * from source
+
+
+    where ts > (select max(ts) from "datalake"."analytics_source"."src_page_view_events")
+
+    )
+[0m10:20:06.176054 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:20:06.384184 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.387190 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.387190 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    describe "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+[0m10:20:06.497542 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.501554 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.502058 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    describe "datalake"."analytics_source"."src_page_view_events"
+[0m10:20:06.608159 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.611173 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.611173 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    describe "datalake"."analytics_source"."src_page_view_events"
+[0m10:20:06.709154 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.711172 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.713171 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.713171 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+insert into "datalake"."analytics_source"."src_page_view_events" ("id", "ts", "sessionid", "page", "auth", "level", "iteminsession", "city", "zip", "state", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration", "artist", "song", "duration")
+    (
+        select "id", "ts", "sessionid", "page", "auth", "level", "iteminsession", "city", "zip", "state", "useragent", "lon", "lat", "userid", "lastname", "firstname", "gender", "registration", "artist", "song", "duration"
+        from "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+    )
+[0m10:20:06.868237 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.872271 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+[0m10:20:06.872271 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.src_page_view_events"
+[0m10:20:06.873270 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.src_page_view_events"} */
+
+    drop table if exists "datalake"."analytics_source"."src_page_view_events__dbt_tmp"
+[0m10:20:06.987069 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:06.988074 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: ROLLBACK
+[0m10:20:06.989077 [debug] [Thread-1 (]: On model.my_dbt_trino_project.src_page_view_events: Close
+[0m10:20:06.989077 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '819bf140-452d-4f11-8728-afb48875a71d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B34CD5C90>]}
+[0m10:20:06.989077 [info ] [Thread-1 (]: 3 of 3 OK created sql incremental model analytics_source.src_page_view_events .. [[32mSUCCESS[0m in 0.83s]
+[0m10:20:06.990290 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.src_page_view_events
+[0m10:20:06.991298 [debug] [MainThread]: On master: COMMIT
+[0m10:20:06.991298 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:20:06.992299 [debug] [MainThread]: Connection 'list_datalake' was properly closed.
+[0m10:20:06.992299 [debug] [MainThread]: Connection 'list_datalake_analytics_source' was properly closed.
+[0m10:20:06.992299 [debug] [MainThread]: Connection 'model.my_dbt_trino_project.src_page_view_events' was properly closed.
+[0m10:20:06.992299 [info ] [MainThread]: 
+[0m10:20:06.993299 [info ] [MainThread]: Finished running 1 table model, 2 incremental models in 0 hours 0 minutes and 2.96 seconds (2.96s).
+[0m10:20:06.994298 [debug] [MainThread]: Command end result
+[0m10:20:07.070889 [info ] [MainThread]: 
+[0m10:20:07.072122 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:20:07.072122 [info ] [MainThread]: 
+[0m10:20:07.073134 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m10:20:07.074131 [debug] [MainThread]: Command `dbt run` succeeded at 10:20:07.074131 after 3.78 seconds
+[0m10:20:07.075128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B2DE0EED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B2DE0E2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B2DE0F390>]}
+[0m10:20:07.075128 [debug] [MainThread]: Flushing usage events
+[0m10:20:19.492078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA1236150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA0E373D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB9FCE9310>]}
+
+
+============================== 10:20:19.494079 | 832b4395-c4f2-4316-a604-8eaa6dabe5c9 ==============================
+[0m10:20:19.494079 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:20:19.495079 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --models stage', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:20:19.778719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA1594D90>]}
+[0m10:20:19.811740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB9E3B5510>]}
+[0m10:20:19.811740 [info ] [MainThread]: Registered adapter: trino=1.8.0
+[0m10:20:19.821742 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m10:20:19.969354 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:20:19.970354 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:20:19.997375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA186EA50>]}
+[0m10:20:20.059508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA179BF10>]}
+[0m10:20:20.060508 [info ] [MainThread]: Found 15 models, 7 data tests, 3 sources, 559 macros
+[0m10:20:20.060508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA19E1890>]}
+[0m10:20:20.062508 [info ] [MainThread]: 
+[0m10:20:20.063508 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m10:20:20.066508 [debug] [ThreadPool]: Acquiring new trino connection 'list_datalake'
+[0m10:20:20.121384 [debug] [ThreadPool]: Using trino connection "list_datalake"
+[0m10:20:20.121384 [debug] [ThreadPool]: On list_datalake: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake"} */
+
+    select schema_name
+    from "datalake".INFORMATION_SCHEMA.schemata
+[0m10:20:20.122384 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:20:20.153336 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:20.154334 [debug] [ThreadPool]: On list_datalake: Close
+[0m10:20:20.156338 [debug] [ThreadPool]: Acquiring new trino connection 'list_datalake_analytics_stage'
+[0m10:20:20.166843 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics_stage"
+[0m10:20:20.167843 [debug] [ThreadPool]: On list_datalake_analytics_stage: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics_stage"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics_stage') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics_stage'
+[0m10:20:20.167843 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:20:20.244721 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:20.245725 [debug] [ThreadPool]: On list_datalake_analytics_stage: ROLLBACK
+[0m10:20:20.245725 [debug] [ThreadPool]: On list_datalake_analytics_stage: Close
+[0m10:20:20.246728 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_datalake_analytics_stage, now list_datalake_analytics)
+[0m10:20:20.250017 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics"
+[0m10:20:20.250017 [debug] [ThreadPool]: On list_datalake_analytics: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics'
+[0m10:20:20.251459 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:20:20.317333 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:20.318335 [debug] [ThreadPool]: On list_datalake_analytics: ROLLBACK
+[0m10:20:20.319842 [debug] [ThreadPool]: On list_datalake_analytics: Close
+[0m10:20:20.320849 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_datalake_analytics, now list_datalake_analytics_source)
+[0m10:20:20.324941 [debug] [ThreadPool]: Using trino connection "list_datalake_analytics_source"
+[0m10:20:20.324941 [debug] [ThreadPool]: On list_datalake_analytics_source: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "connection_name": "list_datalake_analytics_source"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "datalake".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'datalake'
+              and schema_name = 'analytics_source') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'analytics_source'
+[0m10:20:20.324941 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:20:20.398125 [debug] [ThreadPool]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:20.399645 [debug] [ThreadPool]: On list_datalake_analytics_source: ROLLBACK
+[0m10:20:20.399645 [debug] [ThreadPool]: On list_datalake_analytics_source: Close
+[0m10:20:20.400654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA12A5E10>]}
+[0m10:20:20.402011 [debug] [MainThread]: On master: COMMIT
+[0m10:20:20.402011 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:20:20.403019 [info ] [MainThread]: 
+[0m10:20:20.405666 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:20:20.405666 [info ] [Thread-1 (]: 1 of 6 START sql table model analytics_stage.stg_streams_hourly ................ [RUN]
+[0m10:20:20.406671 [debug] [Thread-1 (]: Acquiring new trino connection 'model.my_dbt_trino_project.stg_streams_hourly'
+[0m10:20:20.407264 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:20:20.409277 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:20:20.410277 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:20:20.441047 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:20:20.443049 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:20:20.443049 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+
+  
+    
+
+    create table "datalake"."analytics_stage"."stg_streams_hourly__dbt_tmp"
+      
+      
+    as (
+      
+
+SELECT
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%Y-%m-%d') AS stream_date, 
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%H') AS stream_hour,
+    COUNT(*) AS total_streams
+FROM "datalake"."analytics_source"."src_listen_events"
+GROUP BY
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%Y-%m-%d'),
+    DATE_FORMAT(FROM_UNIXTIME(ts), '%H')
+    )
+[0m10:20:20.443049 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:20:20.709889 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:20.714396 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:20:20.715405 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+alter table "datalake"."analytics_stage"."stg_streams_hourly" rename to "datalake"."analytics_stage"."stg_streams_hourly__dbt_backup"
+[0m10:20:20.812371 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:20.815885 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:20:20.815885 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+alter table "datalake"."analytics_stage"."stg_streams_hourly__dbt_tmp" rename to "datalake"."analytics_stage"."stg_streams_hourly"
+[0m10:20:20.904546 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:20.909543 [debug] [Thread-1 (]: Applying DROP to: "datalake"."analytics_stage"."stg_streams_hourly__dbt_backup"
+[0m10:20:20.912053 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_streams_hourly"
+[0m10:20:20.912053 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_streams_hourly"} */
+
+    drop table if exists "datalake"."analytics_stage"."stg_streams_hourly__dbt_backup"
+[0m10:20:21.037709 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:21.050476 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: ROLLBACK
+[0m10:20:21.050476 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_streams_hourly: Close
+[0m10:20:21.051973 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA1C79090>]}
+[0m10:20:21.052477 [info ] [Thread-1 (]: 1 of 6 OK created sql table model analytics_stage.stg_streams_hourly ........... [[32mSUCCESS[0m in 0.64s]
+[0m10:20:21.053486 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_streams_hourly
+[0m10:20:21.053486 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:20:21.054485 [info ] [Thread-1 (]: 2 of 6 START sql view model analytics_stage.stg_top_songs_artists .............. [RUN]
+[0m10:20:21.054485 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_streams_hourly, now model.my_dbt_trino_project.stg_top_songs_artists)
+[0m10:20:21.055484 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:20:21.057485 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_top_songs_artists"
+[0m10:20:21.058485 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:20:21.072486 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_top_songs_artists"
+[0m10:20:21.073485 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_top_songs_artists"
+[0m10:20:21.073485 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_top_songs_artists: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_top_songs_artists"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_top_songs_artists"
+  security definer
+  as
+    
+
+WITH song_plays AS (
+    SELECT
+        artist,
+        song,
+        COUNT(*) AS play_count
+    FROM "datalake"."analytics_source"."src_listen_events"
+    GROUP BY artist, song
+)
+
+SELECT
+    artist,
+    song,
+    play_count
+FROM song_plays
+ORDER BY play_count DESC
+  
+[0m10:20:21.074487 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:20:21.143432 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:21.145034 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_top_songs_artists: ROLLBACK
+[0m10:20:21.145566 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_top_songs_artists: Close
+[0m10:20:21.146093 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA2108A50>]}
+[0m10:20:21.146628 [info ] [Thread-1 (]: 2 of 6 OK created sql view model analytics_stage.stg_top_songs_artists ......... [[32mSUCCESS[0m in 0.09s]
+[0m10:20:21.147683 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_top_songs_artists
+[0m10:20:21.147683 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_unique_users
+[0m10:20:21.148215 [info ] [Thread-1 (]: 3 of 6 START sql view model analytics_stage.stg_unique_users ................... [RUN]
+[0m10:20:21.149296 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_top_songs_artists, now model.my_dbt_trino_project.stg_unique_users)
+[0m10:20:21.149296 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_unique_users
+[0m10:20:21.151974 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_unique_users"
+[0m10:20:21.152512 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_unique_users
+[0m10:20:21.154651 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_unique_users"
+[0m10:20:21.156342 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_unique_users"
+[0m10:20:21.156342 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_unique_users: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_unique_users"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_unique_users"
+  security definer
+  as
+    
+
+SELECT
+    COUNT(DISTINCT userid) AS total_unique_users
+FROM "datalake"."analytics_source"."src_listen_events"
+WHERE userid IS NOT NULL
+  
+[0m10:20:21.156342 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:20:21.208354 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:21.209361 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_unique_users: ROLLBACK
+[0m10:20:21.210368 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_unique_users: Close
+[0m10:20:21.210368 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA1762110>]}
+[0m10:20:21.211368 [info ] [Thread-1 (]: 3 of 6 OK created sql view model analytics_stage.stg_unique_users .............. [[32mSUCCESS[0m in 0.06s]
+[0m10:20:21.212592 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_unique_users
+[0m10:20:21.212592 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:20:21.213600 [info ] [Thread-1 (]: 4 of 6 START sql view model analytics_stage.stg_user_activity_per_country ...... [RUN]
+[0m10:20:21.213600 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_unique_users, now model.my_dbt_trino_project.stg_user_activity_per_country)
+[0m10:20:21.214597 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:20:21.216600 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_user_activity_per_country"
+[0m10:20:21.217892 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:20:21.219902 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_user_activity_per_country"
+[0m10:20:21.222900 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_user_activity_per_country"
+[0m10:20:21.223898 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_country: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_user_activity_per_country"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_user_activity_per_country"
+  security definer
+  as
+    
+
+WITH combined_activities AS (
+  SELECT
+    country,
+    'listen_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_listen_events"
+  WHERE country IS NOT NULL
+  UNION ALL
+  SELECT
+    'Unknown' AS country, 
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_auth_events"
+  UNION ALL
+  SELECT
+    'Unknown' AS country, 
+    'page_view_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_page_view_events"
+)
+
+SELECT
+  country,
+  COUNT(*) AS activity_count
+FROM combined_activities
+GROUP BY country
+  
+[0m10:20:21.223898 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:20:21.284979 [debug] [Thread-1 (]: Trino adapter: Trino query id: 20240619_022021_00082_uxt54
+[0m10:20:21.284979 [debug] [Thread-1 (]: Trino adapter: Trino error: TrinoUserError(type=USER_ERROR, name=TYPE_MISMATCH, message="line 17:3: UNION query has different number of fields: 4, 3", query_id=20240619_022021_00082_uxt54)
+[0m10:20:21.285985 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_country: ROLLBACK
+[0m10:20:21.285985 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_country: Close
+[0m10:20:21.290000 [debug] [Thread-1 (]: Database Error in model stg_user_activity_per_country (models\stage\stg_user_activity_per_country.sql)
+  TrinoUserError(type=USER_ERROR, name=TYPE_MISMATCH, message="line 17:3: UNION query has different number of fields: 4, 3", query_id=20240619_022021_00082_uxt54)
+  compiled Code at target\run\my_dbt_trino_project\models\stage\stg_user_activity_per_country.sql
+[0m10:20:21.291496 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA21B8610>]}
+[0m10:20:21.291496 [error] [Thread-1 (]: 4 of 6 ERROR creating sql view model analytics_stage.stg_user_activity_per_country  [[31mERROR[0m in 0.08s]
+[0m10:20:21.292991 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_user_activity_per_country
+[0m10:20:21.293998 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:20:21.293998 [info ] [Thread-1 (]: 5 of 6 START sql view model analytics_stage.stg_user_activity_per_location ..... [RUN]
+[0m10:20:21.293998 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_user_activity_per_country, now model.my_dbt_trino_project.stg_user_activity_per_location)
+[0m10:20:21.295335 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:20:21.299001 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_user_activity_per_location"
+[0m10:20:21.299001 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:20:21.301417 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_user_activity_per_location"
+[0m10:20:21.302677 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_user_activity_per_location"
+[0m10:20:21.303686 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_location: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_user_activity_per_location"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_user_activity_per_location"
+  security definer
+  as
+    
+
+WITH combined_activities AS (
+  SELECT
+    city,
+    state,
+    'auth_event' AS event_type,
+    ts,
+    userid
+ FROM "datalake"."analytics_source"."src_auth_events"
+  UNION ALL
+  SELECT
+    city,
+    state,
+    'listen_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_listen_events"
+  UNION ALL
+  SELECT
+    city,
+    state,
+    'page_view_event' AS event_type,
+    ts,
+    userid
+  FROM "datalake"."analytics_source"."src_page_view_events"
+)
+
+SELECT
+  state,
+  city,
+  COUNT(*) AS activity_count
+FROM combined_activities
+GROUP BY state, city
+  
+[0m10:20:21.303686 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:20:21.402316 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:21.404313 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_location: ROLLBACK
+[0m10:20:21.404313 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_activity_per_location: Close
+[0m10:20:21.405314 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB9EA41C90>]}
+[0m10:20:21.405314 [info ] [Thread-1 (]: 5 of 6 OK created sql view model analytics_stage.stg_user_activity_per_location  [[32mSUCCESS[0m in 0.11s]
+[0m10:20:21.406821 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_user_activity_per_location
+[0m10:20:21.407333 [debug] [Thread-1 (]: Began running node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:20:21.407587 [info ] [Thread-1 (]: 6 of 6 START sql view model analytics_stage.stg_user_level_by_gender ........... [RUN]
+[0m10:20:21.407587 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_dbt_trino_project.stg_user_activity_per_location, now model.my_dbt_trino_project.stg_user_level_by_gender)
+[0m10:20:21.407587 [debug] [Thread-1 (]: Began compiling node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:20:21.410802 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_trino_project.stg_user_level_by_gender"
+[0m10:20:21.410802 [debug] [Thread-1 (]: Began executing node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:20:21.413228 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_trino_project.stg_user_level_by_gender"
+[0m10:20:21.414233 [debug] [Thread-1 (]: Using trino connection "model.my_dbt_trino_project.stg_user_level_by_gender"
+[0m10:20:21.415233 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_level_by_gender: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "my_dbt_trino_project", "target_name": "dev", "node_id": "model.my_dbt_trino_project.stg_user_level_by_gender"} */
+
+  create or replace view
+    "datalake"."analytics_stage"."stg_user_level_by_gender"
+  security definer
+  as
+    
+
+WITH user_subscriptions AS (
+    SELECT
+        gender,
+        level, 
+        COUNT(DISTINCT userId) AS user_count
+    FROM "datalake"."analytics_source"."src_auth_events"
+    WHERE gender IS NOT NULL AND level IS NOT NULL
+    GROUP BY gender, level
+)
+
+SELECT
+    gender,
+    level,
+    user_count
+FROM user_subscriptions
+  
+[0m10:20:21.415233 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:20:21.490025 [debug] [Thread-1 (]: SQL status: SUCCESS in 0.0 seconds
+[0m10:20:21.491031 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_level_by_gender: ROLLBACK
+[0m10:20:21.492031 [debug] [Thread-1 (]: On model.my_dbt_trino_project.stg_user_level_by_gender: Close
+[0m10:20:21.492031 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '832b4395-c4f2-4316-a604-8eaa6dabe5c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA190D390>]}
+[0m10:20:21.493315 [info ] [Thread-1 (]: 6 of 6 OK created sql view model analytics_stage.stg_user_level_by_gender ...... [[32mSUCCESS[0m in 0.08s]
+[0m10:20:21.493315 [debug] [Thread-1 (]: Finished running node model.my_dbt_trino_project.stg_user_level_by_gender
+[0m10:20:21.494509 [debug] [MainThread]: On master: COMMIT
+[0m10:20:21.495519 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:20:21.495773 [debug] [MainThread]: Connection 'list_datalake' was properly closed.
+[0m10:20:21.495773 [debug] [MainThread]: Connection 'list_datalake_analytics_source' was properly closed.
+[0m10:20:21.495773 [debug] [MainThread]: Connection 'model.my_dbt_trino_project.stg_user_level_by_gender' was properly closed.
+[0m10:20:21.496518 [info ] [MainThread]: 
+[0m10:20:21.496518 [info ] [MainThread]: Finished running 1 table model, 5 view models in 0 hours 0 minutes and 1.43 seconds (1.43s).
+[0m10:20:21.497828 [debug] [MainThread]: Command end result
+[0m10:20:21.583025 [info ] [MainThread]: 
+[0m10:20:21.584026 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:20:21.584026 [info ] [MainThread]: 
+[0m10:20:21.585395 [error] [MainThread]:   Database Error in model stg_user_activity_per_country (models\stage\stg_user_activity_per_country.sql)
+  TrinoUserError(type=USER_ERROR, name=TYPE_MISMATCH, message="line 17:3: UNION query has different number of fields: 4, 3", query_id=20240619_022021_00082_uxt54)
+  compiled Code at target\run\my_dbt_trino_project\models\stage\stg_user_activity_per_country.sql
+[0m10:20:21.585395 [info ] [MainThread]: 
+[0m10:20:21.586491 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m10:20:21.587946 [debug] [MainThread]: Command `dbt run` failed at 10:20:21.587946 after 2.22 seconds
+[0m10:20:21.587946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB9C2EF390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB9C2EE310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA17AC110>]}
+[0m10:20:21.588954 [debug] [MainThread]: Flushing usage events
+[0m10:20:48.744694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BB648FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BC627E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BC600510>]}
+
+
+============================== 10:20:48.747687 | c52552ee-b298-4147-8bc6-d7b23af264f5 ==============================
+[0m10:20:48.747687 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:20:48.747687 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ASUS\\Desktop\\work\\Iceberg-Dbt-Trino-Hive-modern-open-source-data-stack-main\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --models models', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:20:49.036256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c52552ee-b298-4147-8bc6-d7b23af264f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BC96AC10>]}
+[0m10:20:49.068797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c52552ee-b298-4147-8bc6-d7b23af264f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156B97456D0>]}
+[0m10:20:49.069787 [info ] [MainThread]: Registered adapter: trino=1.8.0
+[0m10:20:49.078821 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m10:20:49.228374 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:20:49.229374 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:20:49.256054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c52552ee-b298-4147-8bc6-d7b23af264f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BC5C5590>]}
+[0m10:20:49.325404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c52552ee-b298-4147-8bc6-d7b23af264f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BCB13B10>]}
+[0m10:20:49.326405 [info ] [MainThread]: Found 15 models, 7 data tests, 3 sources, 559 macros
+[0m10:20:49.326405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c52552ee-b298-4147-8bc6-d7b23af264f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BCD69990>]}
+[0m10:20:49.327405 [warn ] [MainThread]: The selection criterion 'models' does not match any enabled nodes
+[0m10:20:49.327405 [info ] [MainThread]: 
+[0m10:20:49.328800 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:20:49.329961 [debug] [MainThread]: Command end result
+[0m10:20:49.362380 [debug] [MainThread]: Command `dbt run` succeeded at 10:20:49.362380 after 0.74 seconds
+[0m10:20:49.362380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BC63B9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BC63B390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000156BC63BDD0>]}
+[0m10:20:49.363479 [debug] [MainThread]: Flushing usage events
