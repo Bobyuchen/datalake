@@ -21,7 +21,7 @@ This command navigates to the Docker directory within your project and initiates
 ## Containers
 
 主要的containers
-1. **trino**: 可以開localhost UI，沒有權限問題。
+1. **trino**: 可以開localhost UI。
    ```
    docker exec -it trino trino
    ```
