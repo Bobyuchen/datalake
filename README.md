@@ -21,7 +21,7 @@ This command navigates to the Docker directory within your project and initiates
 ## Containers
 
 主要的containers
-1. **trino**: 可以開localhost UI。
+1. **trino**: 可以開localhost UI，沒有權限問題。
    ```
    docker exec -it trino trino
    ```
@@ -62,7 +62,7 @@ To simulate real-time data streaming in a music event context, follow the instru
 
 ### Preparing Kafka Connectors
 
-After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:
+After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:(設定Kafka連線權限)
    
 1. **Set Permissions for `install_connectors.sh`**: This script installs the necessary Kafka connectors for integrating with PostgreSQL and MongoDB. Adjust the file permissions to make it executable.
    ```
@@ -88,6 +88,38 @@ With the connectors installed:
    ```
    ./postConnect.sh
    ```
+
+## EventMusic Producer
+
+EventMusic Producer is a Dockerized application designed to read data and output them to a Kafka topic, using Avro schemas for data serialization. It integrates seamlessly with Kafka and the Schema Registry to manage the flow of event data linked to music event information.(啟動資料流，詳細可看eventmusic-main\READMEeventmusic.md，有自動與手動)
+
+### Pull the Docker Image
+
+```
+docker pull stefen2020/eventmusic:latest
+```
+
+### Run the Container
+
+Make sure Kafka and Schema Registry are running and accessible. 這個Container啟動，會自動每30秒發送一次5 batch size.
+
+```
+docker run --network="host" --name eventmusic-container stefen2020/eventmusic:latest
+```
+
+## Getting Started manually
+
+Make sure Kafka and Schema Registry are running and accessible. 手動直接執行.py就會直接發送一次。
+
+```
+python listen_events.py
+
+python page_view_events.py
+
+python auth_events.py
+
+python main.py
+```
 
 ## Run the Dbt Commands
 
