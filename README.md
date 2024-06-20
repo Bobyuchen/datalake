@@ -41,7 +41,7 @@ This command navigates to the Docker directory within your project and initiates
 3. **oltp**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=postgres
    ```
    docker exec -it oltp psql -U postgres -d postgres
-   SELECT COUNT(*) FROM auth_events;                    #可以進postgresql查看source量。
+   SELECT COUNT(*) FROM auth_events;                    #進postgresql查看source。
    ```
 
 4. **metastore_db**: postgresql。POSTGRES_DB=metastore。POSTGRES_USER=hive。POSTGRES_PASSWORD=hive
@@ -54,7 +54,7 @@ This command navigates to the Docker directory within your project and initiates
 
 ## Trino catalog
 
-有5個catalog，可以由tirno連線。會存在trino container Files中的etc/trino/catalog
+Trino有5個catalog，可以由tirno連線。會存在trino container Files中的etc/trino/catalog
 1. **datalake**:指向minio經由iceberg表格式管理。
 2. **hive**:指向minio經由hive表格式管理。
 3. **metastore_db**:指向metastore_db。為postgresql資料庫。儲存metadata。
