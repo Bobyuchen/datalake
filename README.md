@@ -32,7 +32,10 @@ This command navigates to the Docker directory within your project and initiates
    SHOW tables FROM datalake.analytics_stage;
    SELECT * FROM datalake.analytics_stage.stg_streams_hourly;
    SELECT COUNT(*) AS row_count FROM oltp.public.auth_events; #確認postgresql source資料來源有無更新。
-   SELECT COUNT(*) AS row_count FROM datalake.analytics_source.src_page_view_events; #後續可以確認數據在datalake有無更新
+   SELECT COUNT(*) AS row_count FROM datalake.analytics_source.src_page_view_events; #可以確認數據在datalake有無更新
+   SELECT * FROM datalake.analytics_source."src_page_view_events$snapshots";  #撈iceberg版本紀錄
+   SELECT * FROM [db_name.]table_name FOR TIMESTAMP AS OF timestamp;          #版本歷程查詢
+   SELECT * FROM [db_name.]table_name FOR VERSION AS OF version;              #版本歷程查詢
    ```
 2. **mongo**: UI要另外下載MongoDB Compass。
 3. **oltp**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=postgres
