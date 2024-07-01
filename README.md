@@ -62,6 +62,39 @@ Trino有5個catalog，可以由tirno連線。會存在trino container Files中�
 5. **website**:mongodb。為mongodb資料庫，儲存資料。
 
 
+## EventMusic Producer
+
+EventMusic Producer is a Dockerized application designed to read data and output them to a Kafka topic, using Avro schemas for data serialization. It integrates seamlessly with Kafka and the Schema Registry to manage the flow of event data linked to music event information.(啟動資料流，詳細可看eventmusic-main\READMEeventmusic.md，有自動與手動)
+
+### Pull the Docker Image
+
+```
+docker pull stefen2020/eventmusic:latest
+```
+
+### Run the Container
+
+Make sure Kafka and Schema Registry are running and accessible. 這個Container啟動，會自動每30秒發送一次5 batch size.
+
+```
+docker run --network="host" --name eventmusic-container stefen2020/eventmusic:latest
+```
+
+## Getting Started manually
+
+Make sure Kafka and Schema Registry are running and accessible. 手動直接執行.py就會直接發送一次。
+
+```
+python listen_events.py
+
+python page_view_events.py
+
+python auth_events.py
+
+python main.py
+```
+
+
 ## Integration with Kafka for Data Streaming
 
 To simulate real-time data streaming in a music event context.
@@ -95,37 +128,6 @@ With the connectors installed:
    ./postConnect.sh
    ```
 
-## EventMusic Producer
-
-EventMusic Producer is a Dockerized application designed to read data and output them to a Kafka topic, using Avro schemas for data serialization. It integrates seamlessly with Kafka and the Schema Registry to manage the flow of event data linked to music event information.(啟動資料流，詳細可看eventmusic-main\READMEeventmusic.md，有自動與手動)
-
-### Pull the Docker Image
-
-```
-docker pull stefen2020/eventmusic:latest
-```
-
-### Run the Container
-
-Make sure Kafka and Schema Registry are running and accessible. 這個Container啟動，會自動每30秒發送一次5 batch size.
-
-```
-docker run --network="host" --name eventmusic-container stefen2020/eventmusic:latest
-```
-
-## Getting Started manually
-
-Make sure Kafka and Schema Registry are running and accessible. 手動直接執行.py就會直接發送一次。
-
-```
-python listen_events.py
-
-python page_view_events.py
-
-python auth_events.py
-
-python main.py
-```
 
 ## Run the Dbt Commands
 
