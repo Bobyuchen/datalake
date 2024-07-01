@@ -68,7 +68,7 @@ To simulate real-time data streaming in a music event context.
 
 ### Preparing Kafka Connectors
 
-After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:(設定Kafka連線權限，確認broker & schema-registry兩個container都有開啟)
+After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:(要等container都啟動完，設定Kafka連線權限，並確認broker & schema-registry兩個container都有開啟)
    
 1. **Set Permissions for `install_connectors.sh`**: This script installs the necessary Kafka connectors for integrating with PostgreSQL and MongoDB. Adjust the file permissions to make it executable.
    ```
@@ -126,6 +126,7 @@ python auth_events.py
 
 python main.py
 ```
+
 
 ## Run the Dbt Commands
 
