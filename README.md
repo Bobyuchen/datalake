@@ -62,6 +62,39 @@ Trino有5個catalog，可以由tirno連線。會存在trino container Files中�
 5. **website**:mongodb。為mongodb資料庫，儲存資料。
 
 
+## Integration with Kafka for Data Streaming
+
+To simulate real-time data streaming in a music event context.
+
+### Preparing Kafka Connectors
+
+After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:(要等container都啟動完，設定Kafka連線權限，並確認broker & schema-registry兩個container都有開啟)
+   
+1. **Set Permissions for `install_connectors.sh`**: This script installs the necessary Kafka connectors for integrating with PostgreSQL and MongoDB. Adjust the file permissions to make it executable.
+   ```
+   cd docker
+   chmod +x install_connectors.sh
+   ```
+   
+2. **Execute `install_connectors.sh`**: Run the script to install the Kafka connectors.
+   ```
+   ./install_connectors.sh
+   ```
+
+### Configuring Connectors and Producing Data
+
+With the connectors installed:
+
+1. **Set Permissions for `postConnect.sh`**: This script configures the connectors. Modify the permissions to ensure executability.
+   ```
+   chmod +x postConnect.sh
+   ```
+   
+2. **Execute `postConnect.sh`**: Run the script to configure the connectors and initiate data streaming.
+   ```
+   ./postConnect.sh
+   ```
+
 ## EventMusic Producer
 
 EventMusic Producer is a Dockerized application designed to read data and output them to a Kafka topic, using Avro schemas for data serialization. It integrates seamlessly with Kafka and the Schema Registry to manage the flow of event data linked to music event information.(啟動資料流，詳細可看eventmusic-main\READMEeventmusic.md，有自動與手動)
@@ -93,40 +126,6 @@ python auth_events.py
 
 python main.py
 ```
-
-
-## Integration with Kafka for Data Streaming
-
-To simulate real-time data streaming in a music event context.
-
-### Preparing Kafka Connectors
-
-After setting up the Docker containers and running the local Trino server, proceed with the Kafka connectors setup:(設定Kafka連線權限，確認broker & schema-registry兩個container都有開啟)
-   
-1. **Set Permissions for `install_connectors.sh`**: This script installs the necessary Kafka connectors for integrating with PostgreSQL and MongoDB. Adjust the file permissions to make it executable.
-   ```
-   cd docker
-   chmod +x install_connectors.sh
-   ```
-   
-2. **Execute `install_connectors.sh`**: Run the script to install the Kafka connectors.
-   ```
-   ./install_connectors.sh
-   ```
-
-### Configuring Connectors and Producing Data
-
-With the connectors installed:
-
-1. **Set Permissions for `postConnect.sh`**: This script configures the connectors. Modify the permissions to ensure executability.
-   ```
-   chmod +x postConnect.sh
-   ```
-   
-2. **Execute `postConnect.sh`**: Run the script to configure the connectors and initiate data streaming.
-   ```
-   ./postConnect.sh
-   ```
 
 
 ## Run the Dbt Commands
