@@ -47,5 +47,3 @@ select
 from source
 
 
-
-    where ts NOT IN (SELECT ts FROM "datalake"."analytics_source"."src_auth_events")

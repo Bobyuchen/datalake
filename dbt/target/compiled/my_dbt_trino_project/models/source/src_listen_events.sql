@@ -31,5 +31,3 @@ with source as (
 
 select * from source
 
-
-    where id NOT IN (SELECT id FROM "datalake"."analytics_source"."src_listen_events")
