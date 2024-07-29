@@ -4,7 +4,7 @@ my_dbt_trino_project:
     dev:
       type: trino
       method: none
-      user: admin
+      user: minio
       database: datalake
       host: localhost
       port: 8080
