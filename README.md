@@ -61,6 +61,18 @@ Trino有5個catalog，可以由tirno連線。會存在trino container Files中�
 4. **oltp**:指向oltp。為postgresql的資料庫，儲存資料。
 5. **website**:mongodb。為mongodb資料庫，儲存資料。
 
+## Initialize `test` schema
+
+There is a simple SQL script to initialize a test schema
+in the `iceberg` catalog by copying TPCH "tiny" schema from the Trino:
+
+```bash
+docker exec -it trino trino -f /home/test/test-schema.sql
+```
+
+This is not required. It is possible to create other schemata in the `iceberg`
+catalog and create and populate tables there in any way.
+
 
 ## Integration with Kafka for Data Streaming
 
