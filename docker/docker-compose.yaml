@@ -6,9 +6,9 @@ x-common-environment: &common-environment
   AWS_REGION: us-east-1
 
 services:
-  oltp:
+  postgresql:
     image: postgres:latest
-    container_name: oltp
+    container_name: postgresql
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
@@ -51,7 +51,7 @@ services:
       - minio
     volumes:
       - ./catalog:/etc/trino/catalog    
-      - ./trino/test-schema.sql:/home/trino/test-schema.sql
+      - ./test/test-schema.sql:/home/test/test-schema.sql
     environment:
       <<: *common-environment
     networks:
@@ -80,9 +80,9 @@ services:
 
   postgres:
     image: postgres:13
-    container_name: postgres
+    container_name: metastore
     ports:
-      - "15433:5433"
+      - "15433:5432"
     environment:
       PGDATA: /var/lib/postgresql/data
       POSTGRES_USER: postgres
