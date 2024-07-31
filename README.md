@@ -18,7 +18,7 @@ docker-compose up --build -d
 
 This command navigates to the Docker directory within your project and initiates the Docker Compose process, which builds and starts the containers defined in your `docker-compose.yml` file in detached mode.
 
-## Containers
+## Main Containers
 
 主要的containers
 1. **trino**: 可以開localhost UI，沒有權限問題。
@@ -38,28 +38,31 @@ This command navigates to the Docker directory within your project and initiates
    SELECT * FROM [db_name.]table_name FOR VERSION AS OF version;              #版本歷程查詢
    ```
 2. **mongo**: UI要另外下載MongoDB Compass。
-3. **oltp**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=postgres
+3. **postgresql**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=password
    ```
-   docker exec -it oltp psql -U postgres -d postgres
+   docker exec -it postgresql psql -U postgres -d postgres
    SELECT COUNT(*) FROM auth_events;                    #進postgresql查看source。
    ```
 
-4. **metastore_db**: postgresql。POSTGRES_DB=metastore。POSTGRES_USER=hive。POSTGRES_PASSWORD=hive
+4. **metastore**: postgresql。POSTGRES_DB=metadata。POSTGRES_USER=postgres。POSTGRES_PASSWORD=password
    ```
-   docker exec -it metastore_db psql -U hive -d metastore
+   docker exec -it metastore psql -U postgres -d metadata
    ```
 
 5. **minio**:可以開localhost UI，帳號minio，密碼minio123。
-6. **broker & schema-registry**: 兩個是Kafka server啟動compose有時候可能會關掉，要再開一次。
+6. **iceberg-rest**: iceberg REST Server。
+7. **openmetadata_elasticsearch**: 為OpenMetadata儲存metadata及搜尋內部metadata引擎。
+8. **execute_migrate_all**: 用於初始化及更新OpenMetadata數據庫架構。
+9. **openmetadata_server**: OpenMetadata server，負責OpenMetadata核心服務，提供API接口、管理元數據存儲、執行身份驗證和授權等功能。
+8. **openmetadata_ingestion**: OpenMetadata的數據攝取服務，負責從各種數據源中提取metadata。
 
 ## Trino catalog
 
 Trino有5個catalog，可以由tirno連線。會存在trino container Files中的etc/trino/catalog
-1. **datalake**:指向minio經由iceberg表格式管理。
-2. **hive**:指向minio經由hive表格式管理。
-3. **metastore_db**:指向metastore_db。為postgresql資料庫。儲存metadata。
-4. **oltp**:指向oltp。為postgresql的資料庫，儲存資料。
-5. **website**:mongodb。為mongodb資料庫，儲存資料。
+1. **iceberg**:指向minio經由iceberg表格式管理。
+2. **metastore**:指向metastore。為postgresql資料庫。儲存metadata。
+3. **postgresql**:指向postgresql。為postgresql的資料庫，儲存資料。
+4. **mongo**:mongodb。為mongodb資料庫，儲存資料。
 
 ## Initialize `test` schema
 
@@ -185,6 +188,21 @@ dbt對iceberg materialized格式
 1. **table**: dbt table的邏輯是沒有table就創建一個新的，有舊的table存在會刪掉舊的，建一個新的。所以對iceberg而言，不會有版本紀錄，舊的跟新的本質是兩個不同的。
 
 2. **incremental**:dbt incremental的邏輯是只處理有變動的部分，不會更新整個表，當有資料新增，就對舊的表去新增資料，所以會有iceberg的版本紀錄。
+
+
+## Using OpenMetadata
+https://docs.open-metadata.org/v1.4.x/quick-start/local-docker-deployment
+1. **Log in to OpenMetadata**:
+OpenMetadata provides a default admin account to login.You can access OpenMetadata at http://localhost:8585. Use the following credentials to log in to OpenMetadata.
+   Username: admin@openmetadata.org
+   Password: admin
+Once you log in, you can goto Settings -> Users to add another user and make them admin as well.
+
+2. **Log in to Airflow**:
+OpenMetadata ships with an Airflow container to run the ingestion workflows that have been deployed via the UI.In the Airflow, you will also see some sample DAGs that will ingest sample data and serve as an example.You can access Airflow at http://localhost:8080. Use the following credentials to log in to Airflow.
+   Username: admin
+   Password: admin
+
 
 ## Get Superset
 
