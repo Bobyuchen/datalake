@@ -45,7 +45,7 @@ services:
     container_name: trino
     image: 'trinodb/trino:latest'
     ports:
-    - 8080:8080   
+    - 8079:8080   
     depends_on:
       - rest
       - minio
