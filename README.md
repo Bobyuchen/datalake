@@ -194,8 +194,8 @@ dbt對iceberg materialized格式
 https://docs.open-metadata.org/v1.4.x/quick-start/local-docker-deployment
 1. **Log in to OpenMetadata**:
 OpenMetadata provides a default admin account to login.You can access OpenMetadata at http://localhost:8585. Use the following credentials to log in to OpenMetadata.
-   Username: admin@openmetadata.org
-   Password: admin
+  Username: admin@openmetadata.org
+  Password: admin
 Once you log in, you can goto Settings -> Users to add another user and make them admin as well.
 
 2. **Log in to Airflow**:
