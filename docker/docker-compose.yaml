@@ -5,6 +5,12 @@ x-common-environment: &common-environment
   AWS_SECRET_ACCESS_KEY: password
   AWS_REGION: us-east-1
 
+volumes:
+  ingestion-volume-dag-airflow:
+  ingestion-volume-dags:
+  ingestion-volume-tmp:
+  es-data:  
+
 services:
   postgresql:
     # image: postgres:latest
@@ -336,8 +342,8 @@ services:
       interval: 15s
       timeout: 10s
       retries: 10
-    # volumes:
-    #   - es-data:/usr/share/elasticsearch/data
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
 
   execute-migrate-all:
     container_name: execute_migrate_all
@@ -796,10 +802,10 @@ services:
     networks:
       kafka:
         ipv4_address: 172.20.0.21
-    # volumes:
-    #   - ingestion-volume-dag-airflow:/opt/airflow/dag_generated_configs
-    #   - ingestion-volume-dags:/opt/airflow/dags
-    #   - ingestion-volume-tmp:/tmp
+    volumes:
+      - ingestion-volume-dag-airflow:/opt/airflow/dag_generated_configs
+      - ingestion-volume-dags:/opt/airflow/dags
+      - ingestion-volume-tmp:/tmp
 
 
 
