@@ -5,7 +5,7 @@ my_dbt_trino_project:
       type: trino
       method: none
       user: minio
-      database: datalake
+      database: iceberg
       host: localhost
       port: 8080
       schema: analytics

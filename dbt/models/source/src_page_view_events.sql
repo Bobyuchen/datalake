@@ -23,7 +23,7 @@ with source as (
         artist,
         song,
         CAST(NULLIF(duration, '') AS double) as duration
-    from {{ source('website', 'page_view_events') }}
+    from {{ source('mongo', 'page_view_events') }}
 )
 
 select * from source

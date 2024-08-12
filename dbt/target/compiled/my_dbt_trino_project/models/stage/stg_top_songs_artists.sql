@@ -5,7 +5,7 @@ WITH song_plays AS (
         artist,
         song,
         COUNT(*) AS play_count
-    FROM "datalake"."analytics_source"."src_listen_events"
+    FROM "iceberg"."analytics_source"."src_listen_events"
     GROUP BY artist, song
 )
 
