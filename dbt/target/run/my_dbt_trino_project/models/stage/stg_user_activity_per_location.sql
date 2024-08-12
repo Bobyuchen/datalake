@@ -1,6 +1,6 @@
 
   create or replace view
-    "datalake"."analytics_stage"."stg_user_activity_per_location"
+    "iceberg"."analytics_stage"."stg_user_activity_per_location"
   security definer
   as
     
@@ -12,7 +12,7 @@ WITH combined_activities AS (
     'auth_event' AS event_type,
     ts,
     userid
- FROM "datalake"."analytics_source"."src_auth_events"
+ FROM "iceberg"."analytics_source"."src_auth_events"
   UNION ALL
   SELECT
     city,
@@ -20,7 +20,7 @@ WITH combined_activities AS (
     'listen_event' AS event_type,
     ts,
     userid
-  FROM "datalake"."analytics_source"."src_listen_events"
+  FROM "iceberg"."analytics_source"."src_listen_events"
   UNION ALL
   SELECT
     city,
@@ -28,7 +28,7 @@ WITH combined_activities AS (
     'page_view_event' AS event_type,
     ts,
     userid
-  FROM "datalake"."analytics_source"."src_page_view_events"
+  FROM "iceberg"."analytics_source"."src_page_view_events"
 )
 
 SELECT

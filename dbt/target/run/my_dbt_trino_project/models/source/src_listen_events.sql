@@ -2,7 +2,7 @@
   
     
 
-    create table "datalake"."analytics_source"."src_listen_events"
+    create table "iceberg"."analytics_source"."src_listen_events"
       
       
     as (
@@ -33,7 +33,7 @@ with source as (
         firstName,
         gender,
         CAST(CAST(NULLIF(registration, '') AS DOUBLE) AS BIGINT) as registration
-    from "website"."demo"."listen_events"
+    from "mongo"."demo"."listen_events"
 
 )
 

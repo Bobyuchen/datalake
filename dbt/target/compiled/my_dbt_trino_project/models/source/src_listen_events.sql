@@ -25,7 +25,7 @@ with source as (
         firstName,
         gender,
         CAST(CAST(NULLIF(registration, '') AS DOUBLE) AS BIGINT) as registration
-    from "website"."demo"."listen_events"
+    from "mongo"."demo"."listen_events"
 
 )
 

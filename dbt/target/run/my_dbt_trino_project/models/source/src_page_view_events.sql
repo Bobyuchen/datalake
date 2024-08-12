@@ -2,7 +2,7 @@
   
     
 
-    create table "datalake"."analytics_source"."src_page_view_events"
+    create table "iceberg"."analytics_source"."src_page_view_events"
       
       
     as (
@@ -31,7 +31,7 @@ with source as (
         artist,
         song,
         CAST(NULLIF(duration, '') AS double) as duration
-    from "website"."demo"."page_view_events"
+    from "mongo"."demo"."page_view_events"
 )
 
 select * from source

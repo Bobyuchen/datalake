@@ -1,6 +1,6 @@
 
   create or replace view
-    "datalake"."analytics_stage"."stg_user_level_by_gender"
+    "iceberg"."analytics_stage"."stg_user_level_by_gender"
   security definer
   as
     
@@ -10,7 +10,7 @@ WITH user_subscriptions AS (
         gender,
         level, 
         COUNT(DISTINCT userId) AS user_count
-    FROM "datalake"."analytics_source"."src_auth_events"
+    FROM "iceberg"."analytics_source"."src_auth_events"
     WHERE gender IS NOT NULL AND level IS NOT NULL
     GROUP BY gender, level
 )

@@ -19,7 +19,7 @@ with source as (
         gender,
         CAST(FLOOR(CAST(NULLIF(registration, '') AS DOUBLE)) AS BIGINT) as registration,
         success
-    from {{ source('oltp', 'auth_events') }}
+    from {{ source('postgresql', 'auth_events') }}
 )
 
 select

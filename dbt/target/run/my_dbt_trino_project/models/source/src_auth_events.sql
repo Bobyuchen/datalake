@@ -2,7 +2,7 @@
   
     
 
-    create table "datalake"."analytics_source"."src_auth_events"
+    create table "iceberg"."analytics_source"."src_auth_events"
       
       
     as (
@@ -27,7 +27,7 @@ with source as (
         gender,
         CAST(FLOOR(CAST(NULLIF(registration, '') AS DOUBLE)) AS BIGINT) as registration,
         success
-    from "oltp"."public"."auth_events"
+    from "postgresql"."public"."auth_events"
 )
 
 select

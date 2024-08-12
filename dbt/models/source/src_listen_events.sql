@@ -25,7 +25,7 @@ with source as (
         firstName,
         gender,
         CAST(CAST(NULLIF(registration, '') AS DOUBLE) AS BIGINT) as registration
-    from {{ source('website', 'listen_events') }}
+    from {{ source('mongo', 'listen_events') }}
 
 )
 

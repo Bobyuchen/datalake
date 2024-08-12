@@ -38,18 +38,21 @@ This command navigates to the Docker directory within your project and initiates
    SELECT * FROM [db_name.]table_name FOR VERSION AS OF version;              #版本歷程查詢
    ```
 2. **mongo**: UI要另外下載MongoDB Compass。
-3. **postgresql**: postgresql。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=password
+3. **postgresql**: postgresql"需要添加套件"。POSTGRES_DB=postgres。POSTGRES_USER=postgres。POSTGRES_PASSWORD=password
    ```
    docker exec -it postgresql psql -U postgres -d postgres
-   SELECT COUNT(*) FROM auth_events;                    #進postgresql查看source。
+   CREATE EXTENSION IF NOT EXISTS pg_stat_statements;
+   shared_preload_libraries = 'pg_stat_statements'        #Need to edit the postgresql.conf file. 已做好，如缺少套件可檢查。
    ```
 
-4. **metastore**: postgresql。POSTGRES_DB=metadata。POSTGRES_USER=postgres。POSTGRES_PASSWORD=password
+4. **metastore**: postgresql"需要添加套件"。POSTGRES_DB=metadata。POSTGRES_USER=postgres。POSTGRES_PASSWORD=password
    ```
    docker exec -it metastore psql -U postgres -d metadata
+   CREATE EXTENSION IF NOT EXISTS pg_stat_statements;
+   shared_preload_libraries = 'pg_stat_statements'        #Need to edit the postgresql.conf file. 已做好，如缺少套件可檢查。
    ```
 
-5. **minio**:可以開localhost UI，帳號minio，密碼minio123。
+5. **minio**:可以開localhost UI，帳號minio，密碼password。
 6. **iceberg-rest**: iceberg REST Server。
 7. **openmetadata_elasticsearch**: 為OpenMetadata儲存metadata及搜尋內部metadata引擎。
 8. **execute_migrate_all**: 用於初始化及更新OpenMetadata數據庫架構。

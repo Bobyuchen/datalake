@@ -6,7 +6,7 @@
     "topics": "auth_events",
     "connection.url": "jdbc:postgresql://postgresql:5432/postgres",
     "connection.user": "postgres",
-    "connection.password": "postgres",
+    "connection.password": "password",
     "auto.create": "true"
   }
 }
