@@ -28,3 +28,5 @@ with source as (
 
 select * from source
 
+
+    where id NOT IN (SELECT id FROM "iceberg"."analytics_source"."src_page_view_events")

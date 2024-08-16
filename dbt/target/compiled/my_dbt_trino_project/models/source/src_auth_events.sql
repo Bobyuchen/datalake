@@ -47,3 +47,5 @@ select
 from source
 
 
+
+    where ts NOT IN (SELECT ts FROM "iceberg"."analytics_source"."src_auth_events")
