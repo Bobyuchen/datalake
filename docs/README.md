@@ -5,4 +5,5 @@
 
 ## FHIR to OMOP server
 [Refer to environment setup](./installation.md)
+
 [Refer to usage instructions](./OMOP_dbt_dagster.md)
