@@ -1,4 +1,4 @@
-#Datalake architecture
+# Datalake architecture
 
 ## Refer to the complete datalake server
 [datalake.md](./datalake.md)
