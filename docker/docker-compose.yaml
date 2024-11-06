@@ -25,8 +25,7 @@ services:
       - 5432
     ports:
       - "5432:5432"
-    volumes:
-     - ./docker-volume/db-data-postgres:/var/lib/postgresql/data
+
     
     networks:
       kafka:
@@ -36,8 +35,6 @@ services:
       interval: 15s
       timeout: 10s
       retries: 10
-
-
 
 
   mongo:
@@ -110,8 +107,6 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: metadata
       POSTGRES_HOST_AUTH_METHOD: md5
-    volumes:
-     - ./docker-volume/db-data-metastore:/var/lib/postgresql/data
     networks:
       kafka:
         ipv4_address: 172.20.0.11   

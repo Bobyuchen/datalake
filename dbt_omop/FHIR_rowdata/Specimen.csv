@@ -1,0 +1,2 @@
+request_method,request_url,resource_id,resource_type,resource_status,full_url,meta_profile,subject_reference,receivedTime,id,type_coding,resourceType
+PUT,Specimen/153f5682-9f46-4311-9c91-1dc3eafdda5b,153f5682-9f46-4311-9c91-1dc3eafdda5b,Specimen,,urn:uuid:153f5682-9f46-4311-9c91-1dc3eafdda5b,['https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Specimen-twpas'],urn:uuid:9719a374-ea11-484f-b377-82882b74154c,2024-05-06T09:00:00Z,153f5682-9f46-4311-9c91-1dc3eafdda5b,"[{'code': 'LP7057-5', 'system': 'http://loinc.org'}]",Specimen
