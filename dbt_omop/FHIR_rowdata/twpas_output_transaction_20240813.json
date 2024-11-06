@@ -1,0 +1,1676 @@
+  {
+            "entry": [
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Observation/6370940c-7f2d-48cf-b92f-ccb2e228c58b"
+                    },
+                    "resource": {
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "C96244",
+                                    "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nci-thesaurus"
+                                }
+                            ]
+                        },
+                        "performer": [
+                            {
+                                "reference": "urn:uuid:16da543b-29f8-48f8-a196-a53708711f23"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "385361009",
+                                    "system": "https://snomed.info/sct"
+                                }
+                            ]
+                        },
+                        "effectiveDateTime": "2024-05-07T00:00:00+08:00",
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-cancer-stage-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "6370940c-7f2d-48cf-b92f-ccb2e228c58b",
+                        "resourceType": "Observation",
+                        "status": "final"
+                    },
+                    "fullUrl": "urn:uuid:6370940c-7f2d-48cf-b92f-ccb2e228c58b"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Observation/cfdf9d23-83cb-4efc-a690-2097b58a131a"
+                    },
+                    "resource": {
+                        "performer": [
+                            {
+                                "reference": "urn:uuid:7a726f82-c5b0-413d-a484-0ea551028303"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "88020-3",
+                                    "system": "http://loinc.org"
+                                }
+                            ]
+                        },
+                        "valueString": "class1",
+                        "effectiveDateTime": "2024-01-01T00:00:00+08:00",
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-pat-assessment-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "cfdf9d23-83cb-4efc-a690-2097b58a131a",
+                        "resourceType": "Observation",
+                        "status": "final"
+                    },
+                    "fullUrl": "urn:uuid:cfdf9d23-83cb-4efc-a690-2097b58a131a"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Claim/65338e19-eaad-406e-8b26-4a97d6f0c3b6"
+                    },
+                    "resource": {
+                        "insurance": [
+                            {
+                                "coverage": {
+                                    "reference": "urn:uuid:e8a1b607-44b4-464d-bfc6-6c66587c6e5a"
+                                },
+                                "sequence": 1,
+                                "focal": true
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "value": "9876456789"
+                            }
+                        ],
+                        "extension": [
+                            {
+                                "valueReference": {
+                                    "reference": "urn:uuid:6e162b39-e08d-492b-a14f-676d72d6c7f0"
+                                },
+                                "url": "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/extension-claim-encounter"
+                            }
+                        ],
+                        "item": [
+                            {
+                                "sequence": 1,
+                                "extension": [
+                                    {
+                                        "valueReference": {
+                                            "reference": "urn:uuid:58d71fde-b32c-431a-bf99-0283b7cbf569"
+                                        },
+                                        "url": "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/extension-requestedService"
+                                    }
+                                ],
+                                "programCode": [
+                                    {
+                                        "text": "停經後雌激素接受器為陽性或不清楚之局部晚期或轉移性乳癌第一線治療"
+                                    }
+                                ],
+                                "productOrService": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-order-type",
+                                            "code": "4",
+                                            "display": "癌症用藥"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "created": "2024-05-30T00:00:00+08:00",
+                        "use": "preauthorization",
+                        "diagnosis": [
+                            {
+                                "sequence": 1,
+                                "extension": [
+                                    {
+                                        "valueDate": "2024-01-01",
+                                        "url": "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-diagnosisRecordedDate"
+                                    }
+                                ],
+                                "type": [
+                                    {
+                                        "text": "Adenocarcinoma, descending colon, cT3N2M1a, cStage IVA, KRAS G12V, with multiple liver metastases, status post FOLFIRI"
+                                    }
+                                ],
+                                "diagnosisCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "code": "I50.812",
+                                            "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-cm-2021-tw"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "procedure": [
+                            {
+                                "date": "2024-01-01T00:00:00+08:00",
+                                "sequence": 1,
+                                "procedureCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "code": "3E0Y704",
+                                            "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2021-tw"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "priority": {
+                            "coding": [
+                                {
+                                    "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-tmhb-type",
+                                    "code": "1",
+                                    "display": "一般事前審查申請"
+                                }
+                            ]
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                                    "code": "institutional"
+                                }
+                            ]
+                        },
+                        "supportingInfo": [
+                            {
+                                "sequence": 14,
+                                "valueReference": {
+                                    "reference": "urn:uuid:b3ad401c-9a58-4593-a894-e79ff866c981"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "medicalRecord"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 5,
+                                "valueReference": {
+                                    "reference": "urn:uuid:6370940c-7f2d-48cf-b92f-ccb2e228c58b"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "cancerStage"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 12,
+                                "valueReference": {
+                                    "reference": "urn:uuid:0a612e15-b469-4af0-8267-41a6944afd42"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "carePlanDocument"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 7,
+                                "valueReference": {
+                                    "reference": "urn:uuid:8501f75f-bbc2-49ed-b78b-550ea4beb41a"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "companionDiagnostics"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 6,
+                                "valueReference": {
+                                    "reference": "urn:uuid:81593fd0-67eb-4d9f-9d9c-90ff052cec66"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "examinationReport"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 2,
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "height"
+                                        }
+                                    ]
+                                },
+                                "valueQuantity": {
+                                    "code": "cm",
+                                    "system": "http://unitsofmeasure.org",
+                                    "value": 170
+                                }
+                            },
+                            {
+                                "sequence": 4,
+                                "valueReference": {
+                                    "reference": "urn:uuid:b71bddca-9ce4-469a-bfa9-877b73a99dfb"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "imagingReport"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 10,
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "code": "1",
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-line-of-therapy",
+                                            "display": "第一線治療"
+                                        }
+                                    ]
+                                },
+                                "valueReference": {
+                                    "reference": "urn:uuid:e6862166-f1a6-4811-9458-4baf34b71d1b"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "medicationRequest"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 9,
+                                "valueReference": {
+                                    "reference": "urn:uuid:cfdf9d23-83cb-4efc-a690-2097b58a131a"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "patientAssessment"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "valueBoolean": false,
+                                "sequence": 3,
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "pregnancyBreastfeedingStatus"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 11,
+                                "valueReference": {
+                                    "reference": "urn:uuid:83c8df78-fd4a-47ed-ac71-87e027d31d6b"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "radiotherapy"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 8,
+                                "valueReference": {
+                                    "reference": "urn:uuid:14bf7941-14fd-4c1c-88e3-924dea22cce7"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "tests"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 13,
+                                "valueReference": {
+                                    "reference": "urn:uuid:a5b4f88f-3e63-46f5-8000-cad9fc0bac28"
+                                },
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "treatmentAssessment"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "sequence": 1,
+                                "category": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                            "code": "weight"
+                                        }
+                                    ]
+                                },
+                                "valueQuantity": {
+                                    "code": "kg",
+                                    "system": "http://unitsofmeasure.org",
+                                    "value": 59.65
+                                }
+                            }
+                        ],
+                        "provider": {
+                            "reference": "urn:uuid:0859e785-8aba-487e-9735-ce027ffce564"
+                        },
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Claim-twpas"
+                            ]
+                        },
+                        "patient": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "enterer": {
+                            "reference": "urn:uuid:912f226e-fcb3-4c9f-84eb-b347eec2287e"
+                        },
+                        "subType": {
+                            "coding": [
+                                {
+                                    "code": "1",
+                                    "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-apply-type",
+                                    "display": "送核"
+                                }
+                            ]
+                        },
+                        "id": "65338e19-eaad-406e-8b26-4a97d6f0c3b6",
+                        "resourceType": "Claim",
+                        "status": "active"
+                    },
+                    "fullUrl": "urn:uuid:65338e19-eaad-406e-8b26-4a97d6f0c3b6"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Coverage/e8a1b607-44b4-464d-bfc6-6c66587c6e5a"
+                    },
+                    "resource": {
+                        "payor": [
+                            {
+                                "reference": "urn:uuid:2975de6b-7c6b-406a-9191-91ce1ab88281"
+                            }
+                        ],
+                        "beneficiary": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Coverage-twpas"
+                            ]
+                        },
+                        "id": "e8a1b607-44b4-464d-bfc6-6c66587c6e5a",
+                        "resourceType": "Coverage",
+                        "status": "active"
+                    },
+                    "fullUrl": "urn:uuid:e8a1b607-44b4-464d-bfc6-6c66587c6e5a"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "DiagnosticReport/b71bddca-9ce4-469a-bfa9-877b73a99dfb"
+                    },
+                    "resource": {
+                        "conclusion": "影像報告結果",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2021-tw",
+                                    "code": "B34JZZ3"
+                                }
+                            ]
+                        },
+                        "performer": [
+                            {
+                                "reference": "urn:uuid:6f3ca14b-c17d-47ee-9489-16e642cef417"
+                            }
+                        ],
+                        "effectiveDateTime": "2024-05-07T00:00:00+08:00",
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DiagnosticReport-image-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "b71bddca-9ce4-469a-bfa9-877b73a99dfb",
+                        "media": [
+                            {
+                                "link": {
+                                    "reference": "urn:uuid:2f68b2e2-d41f-4846-bf12-45f7ce7afe5b"
+                                }
+                            }
+                        ],
+                        "imagingStudy": [
+                            {
+                                "reference": "urn:uuid:010cb38c-76c6-4de1-826f-0a7199e0c297"
+                            }
+                        ],
+                        "resourceType": "DiagnosticReport",
+                        "status": "final"
+                    },
+                    "fullUrl": "urn:uuid:b71bddca-9ce4-469a-bfa9-877b73a99dfb"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "DiagnosticReport/81593fd0-67eb-4d9f-9d9c-90ff052cec66"
+                    },
+                    "resource": {
+                        "conclusion": "細胞檢查報告結果",
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "66117-3",
+                                    "system": "http://loinc.org"
+                                }
+                            ]
+                        },
+                        "performer": [
+                            {
+                                "reference": "urn:uuid:1516170b-e07a-4d04-8879-806926f9e2ab"
+                            }
+                        ],
+                        "effectiveDateTime": "2024-05-07T00:00:00+08:00",
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DiagnosticReport-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "presentedForm": [
+                            {
+                                "title": "病理報告",
+                                "contentType": "application/pdf",
+                                "url": "file://PathologyReport01.pdf"
+                            }
+                        ],
+                        "id": "81593fd0-67eb-4d9f-9d9c-90ff052cec66",
+                        "resourceType": "DiagnosticReport",
+                        "status": "final"
+                    },
+                    "fullUrl": "urn:uuid:81593fd0-67eb-4d9f-9d9c-90ff052cec66"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "DocumentReference/f919949c-9bfa-4708-bf49-8ea45d6bef9f"
+                    },
+                    "resource": {
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DocumentReference-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "f919949c-9bfa-4708-bf49-8ea45d6bef9f",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "gene",
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-pdf-type"
+                                    }
+                                ]
+                            }
+                        ],
+                        "content": [
+                            {
+                                "attachment": {
+                                    "contentType": "application/pdf",
+                                    "url": "file://GenReport01.pdf"
+                                }
+                            }
+                        ],
+                        "resourceType": "DocumentReference",
+                        "status": "current"
+                    },
+                    "fullUrl": "urn:uuid:f919949c-9bfa-4708-bf49-8ea45d6bef9f"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "DocumentReference/0a612e15-b469-4af0-8267-41a6944afd42"
+                    },
+                    "resource": {
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DocumentReference-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "0a612e15-b469-4af0-8267-41a6944afd42",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "careplan",
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-pdf-type"
+                                    }
+                                ]
+                            }
+                        ],
+                        "content": [
+                            {
+                                "attachment": {
+                                    "title": "免疫檢查點抑制劑治療計畫",
+                                    "contentType": "application/pdf",
+                                    "url": "file://CarePlanReport01.pdf"
+                                }
+                            }
+                        ],
+                        "resourceType": "DocumentReference",
+                        "status": "current"
+                    },
+                    "fullUrl": "urn:uuid:0a612e15-b469-4af0-8267-41a6944afd42"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "DocumentReference/adf63c44-8b79-43de-9222-72c5c98866da"
+                    },
+                    "resource": {
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DocumentReference-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "adf63c44-8b79-43de-9222-72c5c98866da",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "test",
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-pdf-type"
+                                    }
+                                ]
+                            }
+                        ],
+                        "content": [
+                            {
+                                "attachment": {
+                                    "title": "DocumentReference_檢驗(查)附件",
+                                    "contentType": "application/pdf",
+                                    "url": "file://TestReport01.pdf"
+                                }
+                            }
+                        ],
+                        "resourceType": "DocumentReference",
+                        "status": "current"
+                    },
+                    "fullUrl": "urn:uuid:adf63c44-8b79-43de-9222-72c5c98866da"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "DocumentReference/b3ad401c-9a58-4593-a894-e79ff866c981"
+                    },
+                    "resource": {
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/DocumentReference-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "b3ad401c-9a58-4593-a894-e79ff866c981",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "medrec",
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-pdf-type"
+                                    }
+                                ]
+                            }
+                        ],
+                        "content": [
+                            {
+                                "attachment": {
+                                    "title": "病歷資料",
+                                    "contentType": "application/pdf",
+                                    "url": "file://MedrecReport01.pdf"
+                                }
+                            }
+                        ],
+                        "resourceType": "DocumentReference",
+                        "status": "current"
+                    },
+                    "fullUrl": "urn:uuid:b3ad401c-9a58-4593-a894-e79ff866c981"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Encounter/6e162b39-e08d-492b-a14f-676d72d6c7f0"
+                    },
+                    "resource": {
+                        "serviceType": {
+                            "coding": [
+                                {
+                                    "code": "AJ",
+                                    "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-consultation-department-nhi-tw"
+                                }
+                            ]
+                        },
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Encounter-twpas"
+                            ]
+                        },
+                        "id": "6e162b39-e08d-492b-a14f-676d72d6c7f0",
+                        "class": {
+                            "code": "AMB",
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+                        },
+                        "resourceType": "Encounter",
+                        "status": "finished"
+                    },
+                    "fullUrl": "urn:uuid:6e162b39-e08d-492b-a14f-676d72d6c7f0"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "ImagingStudy/010cb38c-76c6-4de1-826f-0a7199e0c297"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "urn:dicom:uid",
+                                "value": "urn:oid:2.16.886.2102.54.4546465747.465465465"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/ImagingStudy-twpas"
+                            ]
+                        },
+                        "series": [
+                            {
+                                "uid": "2.16.886.2102.54.4546465747.465465465",
+                                "bodySite": {
+                                    "code": "774007",
+                                    "system": "http://snomed.info/sct",
+                                    "display": "Head and neck structure"
+                                },
+                                "instance": [
+                                    {
+                                        "uid": "2.25.88017001449189502323411118737039844241",
+                                        "sopClass": {
+                                            "code": "rn:oid:1.2.840.10008.5.1.4.1.1.2",
+                                            "system": "urn:ietf:rfc:3986"
+                                        }
+                                    },
+                                    {
+                                        "uid": "2.25.88017001449189502323411118737039844242",
+                                        "sopClass": {
+                                            "code": "rn:oid:1.2.840.10008.5.1.4.1.1.2",
+                                            "system": "urn:ietf:rfc:3986"
+                                        }
+                                    }
+                                ],
+                                "modality": {
+                                    "code": "US",
+                                    "system": "http://dicom.nema.org/resources/ontology/DCM"
+                                }
+                            }
+                        ],
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "010cb38c-76c6-4de1-826f-0a7199e0c297",
+                        "resourceType": "ImagingStudy",
+                        "status": "registered"
+                    },
+                    "fullUrl": "urn:uuid:010cb38c-76c6-4de1-826f-0a7199e0c297"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Media/2f68b2e2-d41f-4846-bf12-45f7ce7afe5b"
+                    },
+                    "resource": {
+                        "bodySite": {
+                            "coding": [
+                                {
+                                    "code": "774007",
+                                    "system": "http://snomed.info/sct",
+                                    "display": "Head and neck structure"
+                                }
+                            ]
+                        },
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Media-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "2f68b2e2-d41f-4846-bf12-45f7ce7afe5b",
+                        "content": {
+                            "contentType": "image/jpeg",
+                            "url": "file://US01.jpg"
+                        },
+                        "resourceType": "Media",
+                        "status": "completed"
+                    },
+                    "fullUrl": "urn:uuid:2f68b2e2-d41f-4846-bf12-45f7ce7afe5b"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "MedicationRequest/58d71fde-b32c-431a-bf99-0283b7cbf569"
+                    },
+                    "resource": {
+                        "dosageInstruction": [
+                            {
+                                "timing": {
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "code": "BIW | QW(1,4)",
+                                                "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"
+                                            }
+                                        ]
+                                    },
+                                    "repeat": {
+                                        "boundsPeriod": {
+                                            "start": "2024-05-07T00:00:00+08:00",
+                                            "end": "2024-05-21T00:00:00+08:00"
+                                        }
+                                    }
+                                },
+                                "doseAndRate": [
+                                    {
+                                        "doseQuantity": {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                                            "code": "TAB",
+                                            "value": 2
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "dispenseRequest": {
+                            "quantity": {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                                "code": "TAB",
+                                "value": 30
+                            }
+                        },
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/MedicationRequest-apply-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "58d71fde-b32c-431a-bf99-0283b7cbf569",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-continuation-status",
+                                        "code": "1",
+                                        "display": "初次使用"
+                                    }
+                                ]
+                            }
+                        ],
+                        "medicationCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "A000755151",
+                                    "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw"
+                                }
+                            ]
+                        },
+                        "intent": "plan",
+                        "resourceType": "MedicationRequest",
+                        "status": "on-hold"
+                    },
+                    "fullUrl": "urn:uuid:58d71fde-b32c-431a-bf99-0283b7cbf569"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "MedicationRequest/e6862166-f1a6-4811-9458-4baf34b71d1b"
+                    },
+                    "resource": {
+                        "dosageInstruction": [
+                            {
+                                "timing": {
+                                    "code": {
+                                        "text": "1W3D"
+                                    },
+                                    "repeat": {
+                                        "boundsPeriod": {
+                                            "start": "2024-05-01T00:00:00+08:00",
+                                            "end": "2024-05-07T00:00:00+08:00"
+                                        }
+                                    }
+                                },
+                                "doseAndRate": [
+                                    {
+                                        "doseQuantity": {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                                            "code": "TAB",
+                                            "value": 4
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "statusReason": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+                                    "code": "altchoice"
+                                }
+                            ]
+                        },
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/MedicationRequest-treat-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "e6862166-f1a6-4811-9458-4baf34b71d1b",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "nhi",
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-drug-category"
+                                    }
+                                ]
+                            }
+                        ],
+                        "medicationCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "A000755151",
+                                    "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw"
+                                }
+                            ]
+                        },
+                        "intent": "order",
+                        "resourceType": "MedicationRequest",
+                        "status": "completed"
+                    },
+                    "fullUrl": "urn:uuid:e6862166-f1a6-4811-9458-4baf34b71d1b"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Observation/8501f75f-bbc2-49ed-b78b-550ea4beb41a"
+                    },
+                    "resource": {
+                        "performer": [
+                            {
+                                "reference": "urn:uuid:b750cb04-7d47-4645-a9a6-ceaaba82f449"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "69548-6"
+                                }
+                            ]
+                        },
+                        "method": {
+                            "coding": [
+                                {
+                                    "code": "LA26418-6",
+                                    "system": "http://loinc.org"
+                                }
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA9634-2",
+                                    "display": "Absent"
+                                }
+                            ]
+                        },
+                        "component": [
+                            {
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "LA6692-3",
+                                            "display": "Deletion"
+                                        }
+                                    ]
+                                },
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "48019-4"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "LA6692-3"
+                                        }
+                                    ]
+                                },
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "21636-6"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "effectiveDateTime": "2024-05-07T00:00:00+08:00",
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "POS",
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "display": "Positive"
+                                    }
+                                ]
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-diagnostic-twpas"
+                            ]
+                        },
+                        "specimen": {
+                            "reference": "urn:uuid:153f5682-9f46-4311-9c91-1dc3eafdda5b"
+                        },
+                        "derivedFrom": [
+                            {
+                                "reference": "urn:uuid:f919949c-9bfa-4708-bf49-8ea45d6bef9f"
+                            }
+                        ],
+                        "id": "8501f75f-bbc2-49ed-b78b-550ea4beb41a",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                        "code": "companionDiagnostics"
+                                    }
+                                ]
+                            }
+                        ],
+                        "resourceType": "Observation",
+                        "status": "final"
+                    },
+                    "fullUrl": "urn:uuid:8501f75f-bbc2-49ed-b78b-550ea4beb41a"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Observation/14bf7941-14fd-4c1c-88e3-924dea22cce7"
+                    },
+                    "resource": {
+                        "performer": [
+                            {
+                                "reference": "urn:uuid:be9cf32f-6590-4f5f-b8f9-bad3f1809432"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "777-3"
+                                }
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "referenceRange": [
+                            {
+                                "high": {
+                                    "unit": "mmol/l",
+                                    "code": "mmol/l",
+                                    "system": "http://unitsofmeasure.org",
+                                    "value": 4.9
+                                },
+                                "low": {
+                                    "unit": "mmol/l",
+                                    "code": "mmol/l",
+                                    "system": "http://unitsofmeasure.org",
+                                    "value": 2.9
+                                },
+                                "text": "tests_consultValueDesc",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "tests_consultValueCat",
+                                            "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "effectiveDateTime": "2024-01-01T00:00:00+08:00",
+                        "interpretation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                        "code": "POS",
+                                        "display": "Positive"
+                                    }
+                                ]
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-laboratory-result-twpas"
+                            ]
+                        },
+                        "derivedFrom": [
+                            {
+                                "reference": "urn:uuid:adf63c44-8b79-43de-9222-72c5c98866da"
+                            }
+                        ],
+                        "id": "14bf7941-14fd-4c1c-88e3-924dea22cce7",
+                        "category": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/nhi-supporting-info-type",
+                                        "code": "examinationReport"
+                                    }
+                                ]
+                            }
+                        ],
+                        "resourceType": "Observation",
+                        "status": "final",
+                        "valueQuantity": {
+                            "unit": "mmol/l",
+                            "value": 4.5
+                        }
+                    },
+                    "fullUrl": "urn:uuid:14bf7941-14fd-4c1c-88e3-924dea22cce7"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Observation/a5b4f88f-3e63-46f5-8000-cad9fc0bac28"
+                    },
+                    "resource": {
+                        "performer": [
+                            {
+                                "reference": "urn:uuid:7a726f82-c5b0-413d-a484-0ea551028303"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://twcore.mohw.gov.tw/ig/pas/CodeSystem/tx-ast",
+                                    "code": "88020-3",
+                                    "display": "International Working Group(IWG) Consensus Criteria"
+                                }
+                            ]
+                        },
+                        "valueString": "Partial remission (PR)",
+                        "effectiveDateTime": "2024-01-01T00:00:00+08:00",
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Observation-tx-assessment-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "id": "a5b4f88f-3e63-46f5-8000-cad9fc0bac28",
+                        "resourceType": "Observation",
+                        "status": "final"
+                    },
+                    "fullUrl": "urn:uuid:a5b4f88f-3e63-46f5-8000-cad9fc0bac28"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Organization/2975de6b-7c6b-406a-9191-91ce1ab88281"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "https://oid.nat.gov.tw/",
+                                "use": "official",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/v2-0203",
+                                            "code": "GOI"
+                                        }
+                                    ]
+                                },
+                                "value": "A21030000I"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-govt-twcore"
+                            ]
+                        },
+                        "name": "衛生福利部中央健康保險署",
+                        "id": "2975de6b-7c6b-406a-9191-91ce1ab88281",
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                        "code": "govt"
+                                    }
+                                ]
+                            }
+                        ],
+                        "resourceType": "Organization"
+                    },
+                    "fullUrl": "urn:uuid:2975de6b-7c6b-406a-9191-91ce1ab88281"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Organization/0859e785-8aba-487e-9735-ce027ffce564"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw",
+                                "use": "official",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "PRN",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "0101090517"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Organization-twpas"
+                            ]
+                        },
+                        "name": "臺北市立聯合醫院",
+                        "id": "0859e785-8aba-487e-9735-ce027ffce564",
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "prov",
+                                        "system": "http://terminology.hl7.org/CodeSystem/organization-type"
+                                    }
+                                ]
+                            }
+                        ],
+                        "resourceType": "Organization"
+                    },
+                    "fullUrl": "urn:uuid:0859e785-8aba-487e-9735-ce027ffce564"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Organization/b750cb04-7d47-4645-a9a6-ceaaba82f449"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/organization-identifier-tw",
+                                "use": "official",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "PRN",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "0101090517"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Organization-twpas"
+                            ]
+                        },
+                        "name": "臺北市立聯合醫院",
+                        "id": "b750cb04-7d47-4645-a9a6-ceaaba82f449",
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "prov",
+                                        "system": "http://terminology.hl7.org/CodeSystem/organization-type"
+                                    }
+                                ]
+                            }
+                        ],
+                        "resourceType": "Organization"
+                    },
+                    "fullUrl": "urn:uuid:b750cb04-7d47-4645-a9a6-ceaaba82f449"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Patient/9719a374-ea11-484f-b377-82882b74154c"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "http://www.moi.gov.tw",
+                                "use": "official",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "NNxxx",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "A123456789"
+                            },
+                            {
+                                "system": "https://www.tph.mohw.gov.tw/",
+                                "use": "official",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "MR",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "123456"
+                            }
+                        ],
+                        "gender": "male",
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Patient-twpas"
+                            ]
+                        },
+                        "name": [
+                            {
+                                "use": "usual",
+                                "text": "王大明"
+                            }
+                        ],
+                        "id": "9719a374-ea11-484f-b377-82882b74154c",
+                        "birthDate": "2001-01-01",
+                        "resourceType": "Patient"
+                    },
+                    "fullUrl": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Practitioner/912f226e-fcb3-4c9f-84eb-b347eec2287e"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "http://www.moi.gov.tw",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "NNxxx",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "F123456789"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+                            ]
+                        },
+                        "id": "912f226e-fcb3-4c9f-84eb-b347eec2287e",
+                        "resourceType": "Practitioner"
+                    },
+                    "fullUrl": "urn:uuid:912f226e-fcb3-4c9f-84eb-b347eec2287e"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Practitioner/6f3ca14b-c17d-47ee-9489-16e642cef417"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "http://www.moi.gov.tw",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "NNxxx",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "F123456789"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+                            ]
+                        },
+                        "id": "6f3ca14b-c17d-47ee-9489-16e642cef417",
+                        "resourceType": "Practitioner"
+                    },
+                    "fullUrl": "urn:uuid:6f3ca14b-c17d-47ee-9489-16e642cef417"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Practitioner/16da543b-29f8-48f8-a196-a53708711f23"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "http://www.moi.gov.tw",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "NNxxx",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "F123456789"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+                            ]
+                        },
+                        "id": "16da543b-29f8-48f8-a196-a53708711f23",
+                        "resourceType": "Practitioner"
+                    },
+                    "fullUrl": "urn:uuid:16da543b-29f8-48f8-a196-a53708711f23"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Practitioner/1516170b-e07a-4d04-8879-806926f9e2ab"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "http://www.moi.gov.tw",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "NNxxx",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "F123456789"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+                            ]
+                        },
+                        "id": "1516170b-e07a-4d04-8879-806926f9e2ab",
+                        "resourceType": "Practitioner"
+                    },
+                    "fullUrl": "urn:uuid:1516170b-e07a-4d04-8879-806926f9e2ab"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Practitioner/be9cf32f-6590-4f5f-b8f9-bad3f1809432"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "http://www.moi.gov.tw",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "NNxxx",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "F123456789"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+                            ]
+                        },
+                        "id": "be9cf32f-6590-4f5f-b8f9-bad3f1809432",
+                        "resourceType": "Practitioner"
+                    },
+                    "fullUrl": "urn:uuid:be9cf32f-6590-4f5f-b8f9-bad3f1809432"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Practitioner/7a726f82-c5b0-413d-a484-0ea551028303"
+                    },
+                    "resource": {
+                        "identifier": [
+                            {
+                                "system": "http://www.moi.gov.tw",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "NNxxx",
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                        }
+                                    ]
+                                },
+                                "value": "F123456789"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Practitioner-twpas"
+                            ]
+                        },
+                        "id": "7a726f82-c5b0-413d-a484-0ea551028303",
+                        "resourceType": "Practitioner"
+                    },
+                    "fullUrl": "urn:uuid:7a726f82-c5b0-413d-a484-0ea551028303"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Procedure/83c8df78-fd4a-47ed-ac71-87e027d31d6b"
+                    },
+                    "resource": {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2021-tw",
+                                    "code": "B34JZZ3"
+                                }
+                            ]
+                        },
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Procedure-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "usedReference": [
+                            {
+                                "reference": "urn:uuid:8c9b7ef3-d80f-4a4f-a1f2-05f1e242c244"
+                            }
+                        ],
+                        "id": "83c8df78-fd4a-47ed-ac71-87e027d31d6b",
+                        "performedDateTime": "2024-05-06T09:00:00Z",
+                        "resourceType": "Procedure",
+                        "status": "completed"
+                    },
+                    "fullUrl": "urn:uuid:83c8df78-fd4a-47ed-ac71-87e027d31d6b"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Specimen/153f5682-9f46-4311-9c91-1dc3eafdda5b"
+                    },
+                    "resource": {
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Specimen-twpas"
+                            ]
+                        },
+                        "subject": {
+                            "reference": "urn:uuid:9719a374-ea11-484f-b377-82882b74154c"
+                        },
+                        "receivedTime": "2024-05-06T09:00:00Z",
+                        "id": "153f5682-9f46-4311-9c91-1dc3eafdda5b",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LP7057-5",
+                                    "system": "http://loinc.org"
+                                }
+                            ]
+                        },
+                        "resourceType": "Specimen"
+                    },
+                    "fullUrl": "urn:uuid:153f5682-9f46-4311-9c91-1dc3eafdda5b"
+                },
+                {
+                    "request": {
+                        "method": "PUT",
+                        "url": "Substance/8c9b7ef3-d80f-4a4f-a1f2-05f1e242c244"
+                    },
+                    "resource": {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "B34JZZ3",
+                                    "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2021-tw"
+                                }
+                            ]
+                        },
+                        "ingredient": [
+                            {
+                                "quantity": {
+                                    "denominator": {
+                                        "value": 0
+                                    },
+                                    "numerator": {
+                                        "unit": "mg",
+                                        "value": 5000
+                                    }
+                                },
+                                "substanceCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "code": "B34JZZ3",
+                                            "system": "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2021-tw"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Substance-twpas"
+                            ]
+                        },
+                        "id": "8c9b7ef3-d80f-4a4f-a1f2-05f1e242c244",
+                        "resourceType": "Substance"
+                    },
+                    "fullUrl": "urn:uuid:8c9b7ef3-d80f-4a4f-a1f2-05f1e242c244"
+                }
+            ],
+            "type": "transaction",
+            "resourceType": "Bundle"
+        }

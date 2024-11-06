@@ -1,0 +1,5 @@
+dbt_omop/dbt_venv/
+dbt_omop/omop_venv/
+docker/docker-volume/ingestion-volume-dag-airflow/
+docker/docker-volume/ingestion-volume-dags/
+docker/docker-volume/ingestion-volume-tmp/

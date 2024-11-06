@@ -1,0 +1,38 @@
+# source.yml
+version: 2
+
+sources:
+  - name: iceberg
+    database: iceberg
+    schema: ifhir
+    tables:
+      # - name: fhir_data_claim
+      # - name: fhir_data_coverage
+      # - name: fhir_data_diagnosticreport
+      # - name: fhir_data_documentreference
+      # - name: fhir_data_encounter
+      # - name: fhir_data_imagingstudy
+      # - name: fhir_data_media
+      # - name: fhir_data_medicationrequest
+      # - name: fhir_data_observation
+      # - name: fhir_data_organization
+      # - name: fhir_data_patient
+      # - name: fhir_data_practitioner
+      # - name: fhir_data_procedure
+      # - name: fhir_data_specimen
+      # - name: fhir_data_substance
+      - name: claim
+      - name: coverage
+      - name: diagnosticreport
+      - name: documentreference
+      - name: encounter
+      - name: imagingstudy
+      - name: media
+      - name: medicationrequest
+      - name: observation
+      - name: organization
+      - name: patient
+      - name: practitioner
+      - name: procedure
+      - name: specimen
+      - name: substance

@@ -1,0 +1,2 @@
+request_method,request_url,resource_id,resource_type,resource_status,full_url,payor,beneficiary_reference,meta_profile,id,resourceType,status
+PUT,Coverage/e8a1b607-44b4-464d-bfc6-6c66587c6e5a,e8a1b607-44b4-464d-bfc6-6c66587c6e5a,Coverage,active,urn:uuid:e8a1b607-44b4-464d-bfc6-6c66587c6e5a,{'reference': 'urn:uuid:2975de6b-7c6b-406a-9191-91ce1ab88281'},urn:uuid:9719a374-ea11-484f-b377-82882b74154c,['https://twcore.mohw.gov.tw/ig/pas/StructureDefinition/Coverage-twpas'],e8a1b607-44b4-464d-bfc6-6c66587c6e5a,Coverage,active

@@ -1,0 +1,12 @@
+my_dbt_trino_project:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      user: minio
+      database: iceberg
+      host: localhost
+      port: 8080
+      schema: omop
+      threads: 1
